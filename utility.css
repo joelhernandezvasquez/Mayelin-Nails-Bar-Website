@@ -1,0 +1,37 @@
+.container {
+  max-width: 95%;
+  height: 100%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.active-link {
+  color: #e885a3 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #e885a3;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=utility.css.map */

@@ -1,0 +1,453 @@
+.container {
+  max-width: 95%;
+  height: 100%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.active-link {
+  color: #e885a3 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #e885a3;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1.3fr 0.7fr;
+}
+
+.showcase .showcase-A {
+  background: #fbecf1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .showcase-A .main-header {
+  width: 100%;
+}
+
+.showcase .showcase-A .welcome-message {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.showcase .showcase-A .welcome-message h1 {
+  font-family: "El Messiri", sans-serif;
+  color: #7c3367;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.showcase .showcase-A .welcome-message .feature-services-container {
+  margin-top: 1rem;
+}
+
+.showcase .showcase-A .welcome-message .feature-services-container .feature {
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.8rem 0;
+}
+
+.showcase .showcase-A .welcome-message .feature-services-container .feature .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e885a3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1.2rem;
+}
+
+.showcase .showcase-A .welcome-message .feature-services-container .feature .icon i {
+  font-size: 1rem;
+  color: #e885a3;
+}
+
+.showcase .showcase-A .welcome-message .feature-services-container .feature h3 {
+  font-size: 0.9rem;
+  color: #6f5a69;
+  font-weight: 400;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action {
+  margin-top: 2rem;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation {
+  padding: 1.2rem 3.6rem;
+  background: #e885a3;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation i {
+  color: white;
+  margin-right: 5px;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation:hover {
+  background: #e2668b;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios {
+  padding: 1.2rem 3rem;
+  background: transparent;
+  border: 1px solid #e885a3;
+  margin-left: 1rem;
+  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
+  transition: background 0.2s ease-out, color 0.2s ease-out;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios a {
+  color: #7c3367;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios:hover {
+  background: #e885a3;
+}
+
+.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios:hover a {
+  color: white;
+}
+
+.showcase .showcase-B {
+  background: #7c3367;
+  position: relative;
+}
+
+.showcase .showcase-B .image-profile-container {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 3;
+}
+
+.showcase .showcase-B .image-profile-container img {
+  width: 700px;
+}
+
+.showcase .showcase-B button {
+  position: absolute;
+  top: 3.8rem;
+  right: 2.5rem;
+  padding: 1rem 2.5rem;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 5;
+  -webkit-transition: background 0.2s ease-out, border-color 0.2s ease-out;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.showcase .showcase-B button i {
+  color: white;
+  margin-right: 2px;
+}
+
+.showcase .showcase-B button:hover {
+  cursor: pointer;
+  background: #e885a3;
+  border-color: transparent;
+}
+
+.about-us {
+  background: #7c3367;
+  height: 650px;
+}
+
+.about-us .inner-about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+}
+
+.about-us .inner-about-us .image-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us .inner-about-us .image-profile img {
+  width: 550px;
+}
+
+.about-us .inner-about-us .about-us-info * {
+  margin: 0.5rem 0;
+}
+
+.about-us .inner-about-us .about-us-info h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "El Messiri", sans-serif;
+}
+
+.about-us .inner-about-us .about-us-info p {
+  color: #dfddde;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-us .inner-about-us .about-us-info button {
+  padding: 1rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: #e885a3;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.about-us .inner-about-us .about-us-info button a {
+  color: white;
+}
+
+.about-us .inner-about-us .about-us-info button:hover {
+  background: #e2668b;
+}
+
+.services .inner-services {
+  padding-top: 4rem;
+  margin: auto;
+}
+
+.services .inner-services .services-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .inner-services .services-title img {
+  width: 120px;
+  height: 120px;
+}
+
+.services .inner-services .services-title h3 {
+  font-size: 1.2rem;
+  color: #e885a3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.services .inner-services .services-title h2 {
+  color: #7c3367;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.services .inner-services .services-features-container {
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.services .inner-services .services-features-container .card {
+  width: 300px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #7c3367;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.services .inner-services .services-features-container .card * {
+  margin: 5px 0;
+}
+
+.services .inner-services .services-features-container .card .icon-container img {
+  width: 60px;
+  height: 60px;
+}
+
+.services .inner-services .services-features-container .card h2 {
+  color: #7c3367;
+}
+
+.services .inner-services .services-features-container .card p {
+  color: #8f4e7c;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.services .inner-services .services-features-container .card a {
+  color: #7c3367;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.services .inner-services .services-features-container .card:hover {
+  border: 1px solid #e885a3;
+  -webkit-box-shadow: 4px 4px 20px -4px rgba(232, 133, 163, 0.61);
+          box-shadow: 4px 4px 20px -4px rgba(232, 133, 163, 0.61);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.services .inner-services #services-btn-container {
+  margin: 5rem auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .inner-services #services-btn-container button {
+  padding: 1.2rem 3rem;
+  background: transparent;
+  border: 1px solid #e885a3;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.services .inner-services #services-btn-container button a {
+  color: #7c3367;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.services .inner-services #services-btn-container button:hover {
+  background: #e2668b;
+}
+
+.services .inner-services #services-btn-container button:hover a {
+  color: white;
+}
+
+.eye-lashes-studio .inner-eye-lashes-studio {
+  position: relative;
+  height: 700px;
+  background-image: url("../assets/pexels-andrea-piacquadio-3757657.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=index.css.map */
