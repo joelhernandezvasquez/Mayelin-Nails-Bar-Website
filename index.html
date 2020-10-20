@@ -3,74 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="animation.js" defer></script>
     <title>Home</title>
 </head>
 <body>
     
     <div class="showcase">
-        <div class="container">
-            
-            <header class="main-header">
-                <div class="logo">
-                <img src="assets/mayelin brand.jpg">
-               </div>
-               <nav class="main-navigation">
-                 <ul>
-                   <li>
-                        <a href="#" class="active-link"> Home</a>
-                   </li>
-                   <li>
-                        <a href="#"> Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#"> Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#"> Productos</a>
-                    </li>
-                    <li>
-                        <a href="#"> Lashes Studio</a>
-                    </li>
-                    <li>
-                        <a href="#"> Galleria</a>
-                    </li>
-
-                    <li>
-                        <a href="#"> Contacto</a>
-                    </li>
-                 </ul>
-               </nav>
-               <div class="phone-contact">
-                <p> <i class="fa fa-phone fa-lg" aria-hidden="true"></i> 1 +(809) 447-9942</p>  
-             </div>
-            </header>
+       
+         
             <div class="showcase-A">
-              
-                <div class="welcome-container">
-                    <h1><span>Mayelin Nails</span> & Bar </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo incidunt mollitia esse pariatur quas!</p>
-                    <button class="book-appointment btn"> Reservar Cita</button>
-                </div>
+                <header class="main-header">
+                   <div> <img src="assets/mayelin_brand-removebg-preview.png" class="logo"/></div>
+                    <nav class="main-nav">
+                      <ul>
+                        <li class="items"> <a href="#" class="active-link"> Home</a></li>
+                        <li class="items"> <a href="#"> Sobre Nosotros</a></li>
+                        <li class="items"> <a href="#"> Servicios</a></li>
+                        <li class="items"> <a href="#"> Productos</a></li>
+                        <li class="items"> <a href="#"> Lashes Studio</a></li>
+                        <li class="items"> <a href="#"> Galleria</a></li>
+                        <li class="items"> <a href="#"> Contacto</a></li>
+                      </ul>
+                   </nav>
+               </header>
 
-                <div class="social-media-container">
-                    
-                    
-                    <ul>
-                        <li> <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li> <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li> <a href="#"> <i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
+               <div class="container">
+
+               <div class="welcome-message">
+                   <h1> Mayelin Nails & Bar</h1>
+                   <h1>La Magia de los Detalles</h1>
+                   <h1>En un Solo Lugar</h1>
+                   <div class="feature-services-container">
+                      <div class="feature">
+                          <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                          <h3> Nails</h3>
+                      </div>
+                      <div class="feature">
+                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                        <h3> Manicure</h3>
+                    </div>
+
+                    <div class="feature">
+                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                        <h3> Pedicure</h3>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                        <h3> Eye Lashes</h3>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                        <h3> Drinks</h3>
+                    </div>
+                   </div>
+                   <div class="btn-container-action">
+                    <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#"> Reservacion</a></button>
+                    <button class="btn btn-servicios"> <a href="#"> Servicios</a></button>
+                   </div>
+               </div>
+               </div>
             </div>
+
             <div class="showcase-B">
-
+               <div class="image-profile-container">
+                <img src="assets/64873517_2431128940263758_3011762133177204736_o-removebg-preview.png">
+               </div> 
+               <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#"></a> Reservacion</a></button>
             </div>
-        </div>
+        
+          
 </div>
+
+<section class="about-us">
+   <div class="container">
+       <div class="inner-about-us">
+           <div class="image-profile">
+             <img src="assets/about us profile.jpg" alt="mayelin_team">
+           </div>
+
+           <div class="about-us-info">
+              <h1> About us</h1>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quidem tempora. Sit ea voluptatem nulla quos ipsa aut autem est dolorum repellendus assumenda rerum, vero aperiam fugit earum eos asperiores ducimus dolores corporis perferendis mollitia sint, sapiente commodi porro. Beatae, aut ipsum! Possimus reprehenderit ipsam, fuga maiores facere facilis nihil saepe nostrum rem, nesciunt accusantium voluptas corporis cumque. Quasi iusto commodi nulla ratione rerum dolorem omnis ipsam nobis eveniet unde eum ipsa sed excepturi vitae qui, voluptatibus magni magnam ut, repudiandae et doloremque temporibus sint. Suscipit, impedit laudantium modi quaerat facilis eligendi quidem non expedita eos similique quibusdam a dignissimos!</p>
+             <button class="btn"> <a href="#"> Read More</a></button>
+            </div>
+       </div>
+   </div>
+</section>
+
+<section class="services">
+ <div class="container">
+      <div class="inner-services">
+          <div class="services-title">
+              <h2> Nuestros Servicios</h2>
+              <h3>Es tiempo de ponerte bella!</h3>
+          </div>
+          <div class="services-features-container">
+              
+            <div class="card">
+                 <div class="icon-container">
+                    
+                    <img src="assets/nail.svg">
+            <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+ 
+                 </div>
+                 <h2>Nails</h2>
+                 <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                 </p>
+                 <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                
+              </div>
+
+              <div class="card">
+                <div class="icon-container">
+                    <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                  <img src="assets/manicure.svg">
+                </div>
+                <h2>Manicure</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                 </p>
+                 <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+               
+             </div>
+
+             <div class="card">
+                <div class="icon-container">
+                    <!-- Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                 <img src="assets/pedicure.svg">
+                </div>
+                <h2>Pedicure</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                 </p>
+                 <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+               
+             </div>
+
+             <div class="card">
+                <div class="icon-container">
+                    <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                 <img src="assets/closed-eyes-with-lashes-and-brows.svg">
+                </div>
+                <h2>Lashes</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                 </p>
+                 <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+               
+             </div>
+
+             
+          </div>
+          <div id="services-btn-container">
+              <button class="btn"> <a href="#">Explorar Servicios</a></button>
+          </div>
+      </div>
+ </div>
+</section>
+
+<section class="eye-lashes-studio">
+
+    <div class="container">
+        <div class="inner-eye-lashes-studio">
+            
+        </div>
+    </div>
+</section>
+
+
 </body>
 </html>
