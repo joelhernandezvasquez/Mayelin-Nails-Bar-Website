@@ -9,7 +9,7 @@
     <link href="styles/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="scripts/main.js" defer></script>
     <script src="animation.js" defer></script>
     <title>Home</title>
 </head>
@@ -173,7 +173,7 @@
 
     <div class="container">
         <div class="inner-eye-lashes-studio">
-           <div class="overlay">  </div>
+            <div class="overlay">  </div>
            <div class="container-lashes">
                <div class="lashes-info">
                  <h1> Lash Studio</h1>
@@ -206,16 +206,18 @@
                     </div>
                 </div>
                 
-                <button class="btn"> <a href=""> Reservacion</a></button>
+                <div id="reservacion-btn-container">
+                    <button class="btn"> <a href=""> Reservacion</a></button>
+                </div>
                </div>
 
                <div class="video-container">
-                   <div id=" video-outter-layer">
-                      <div id="video-inner-layer">
-                          <div id="base-layer">
-                              <!-- <img src=""> -->
-                          </div>
-                      </div>
+                   <div id="video-outter-layer">
+                     <div id="video-inner-layer">
+                       <div id="video-base-layer">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                       </div>  
+                     </div>
                    </div>
                </div>
            </div>
@@ -223,6 +225,144 @@
     </div>
 </section>
 
+<section class="products">
+    <div class="overlay"></div>
+
+    <div class="container">
+       <div class="inner-products">
+         <h1> Nuestros Productos   </h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam.</p>  
+
+           <div class="carrousel">
+              <div class="left-arrow-container">
+                <div class="arrow">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+               </div> 
+
+               <div class="card-containers">
+                  <div class="card-product">
+                      <img src="assets/5.jpg">
+                    <h2> Critical Repair</h2>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                    <span> $200</span> 
+
+                  </div>
+                   <div class="card-product">
+                     <img src="assets/gelish-selfie-2017-gel-nail-polish-collection-all-about-the-pout-15ml-p22117-89686_zoom.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span> 
+
+                 </div>
+
+                  <div class="card-product">
+                     <img src="assets/gelish-soak-off-gel-nail-polish-mini-nourish-cuticle-oil-9ml-p25064-98803_zoom.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span> 
+
+                 </div>
+
+                   <div class="card-product">
+                    <img src="assets/5.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span>
+
+                 </div>
+                 <div class="card-product">
+                    <img src="assets/5.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span>
+
+                 </div>
+                 <div class="card-product">
+                    <img src="assets/5.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span>
+
+                 </div>
+
+                 <div class="card-product">
+                    <img src="assets/5.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span>
+
+                 </div>
+
+                 <div class="card-product">
+                    <img src="assets/5.jpg">
+                   <h2> Critical Repair</h2>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                   <span> $200</span>
+
+                 </div>  
+ 
+                
+                  
+               </div>
+
+               <div class="right-arrow-container">
+                
+                <div class="arrow">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    
+                </div>
+                
+               </div> 
+
+               <div id="btn-products-container">
+                   <button class="btn btn-product"> <a href="#"> Ver Productos</a></button>
+               </div>
+           </div> 
+       </div> 
+    </div>
+    
+</section>
+
+
+<section class="gallery">
+
+    <div class="container">
+        <div class="inner-gallery">
+            <h1 class="title-heading"> Galleria </h1>
+
+            <div class="tab-component">
+                <div class="tab-navigation">
+                    <ul>
+                     <li class="active-tab"> Unas en Resina </li>
+                     <li> Unas en Resina</li>
+                     <li> Unas en Resina</li>
+                     <li> Lashes</li>
+                    </ul>
+                </div>
+
+                <div class="tab-body">
+                 
+                    <div class="inner-gallery-nails">
+                        <img src="assets/117262573_3370998762943433_6009864393719638103_o.jpg">
+                        <img src="assets/118859158_3453841084659200_7933718843341672383_o.jpg">
+                        <img src="assets/122147082_3603440346365939_8931922470658896035_o.jpg">
+                        <img src="assets/87387189_2943403172369663_6154697038635204608_o.jpg">
+                        <img src="assets/89600916_2981146595261987_2232424876910575616_o.jpg">
+                        <img src="assets/121034918_3569763196400321_1019367539925756342_o.jpg">
+                       
+                        
+                        
+                       
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>

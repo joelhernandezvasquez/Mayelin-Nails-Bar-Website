@@ -34,4 +34,11 @@
   top: 0;
   left: 0;
 }
+
+.title-heading {
+  font-size: 3rem;
+  color: #7c3367;
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+}
 /*# sourceMappingURL=utility.css.map */
