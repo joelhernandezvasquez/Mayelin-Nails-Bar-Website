@@ -1,5 +1,5 @@
 .container {
-  max-width: 95%;
+  max-width: 1400px;
   height: 100%;
   margin: auto;
   padding: 1rem;
@@ -35,7 +35,7 @@
   left: 0;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature .icon, .about-us .inner-about-us .image-profile, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container {
+.showcase .showcase-A .welcome-message .feature-services-container .feature .icon, .about-us .inner-about-us .image-profile, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,22 +676,12 @@
   letter-spacing: 1px;
 }
 
-.gallery {
-  border: 1px solid red;
-}
-
-.gallery .container {
-  border: 1px solid black;
-}
-
 .gallery .container .inner-gallery {
   margin-top: 4rem;
 }
 
 .gallery .container .inner-gallery .tab-component {
   border-radius: 3px;
-  -webkit-box-shadow: 3px 4px 10px 0px rgba(124, 51, 103, 0.3);
-          box-shadow: 3px 4px 10px 0px rgba(124, 51, 103, 0.3);
   background: white;
 }
 
@@ -718,25 +708,8 @@
 }
 
 .gallery .container .inner-gallery .tab-component .tab-body {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0 1rem;
-  /* .inner-gallery-nails img:first-child
-					{
-					   grid-column: 1/2;
-					   grid-row: 1/2;
-					}
-
-					.inner-gallery-nails img:nth-child(2)
-					{
-					   grid-column: 2/3;
-					   grid-row: 1/3;
-					}
-
-					.inner-gallery-nails img:nth-child(3)
-					{
-					   grid-column: 3/4;
-					   grid-row: 1/2;
-					} */
 }
 
 .gallery .container .inner-gallery .tab-component .tab-body .inner-gallery-nails {
@@ -744,13 +717,38 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 20px;
 }
 
 .gallery .container .inner-gallery .tab-component .tab-body .inner-gallery-nails img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 5px;
+}
+
+.gallery .container .inner-gallery #btn-gallery-container {
+  margin-top: 3rem;
+}
+
+.gallery .container .inner-gallery #btn-gallery-container button {
+  padding: 1.2rem 4rem;
+  background: #7c3367;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.gallery .container .inner-gallery #btn-gallery-container button:hover {
+  background: #8f4e7c;
+}
+
+.gallery .container .inner-gallery #btn-gallery-container a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=index.css.map */
