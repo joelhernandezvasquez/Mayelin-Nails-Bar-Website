@@ -6,33 +6,35 @@
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1.3fr 0.7fr;
+	overflow: hidden;
 
 	.showcase-A {
 		background: $main-bg;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		//border:1px solid green;
 
-		.main-header {
-			width: 100%;
-		}
 
 		.welcome-message {
+			width:100%;
 			//border:1px solid red;
 			margin-top: 3rem;
+			margin-right: 7rem;
 			display: flex;
 			flex-direction: column;
+			
 
 			h1 {
 				font-family: $secondary-font;
 				color: $secondary-bg;
 				font-size: 4rem;
-				line-height: 1.1;
+				line-height: 1.2;
 			}
 
 			.feature-services-container {
 				//border:1px solid red;
-				margin-top: 1rem;
+				margin-top: 2rem;
 				.feature {
 					width: 140px;
 					display: flex;
@@ -52,7 +54,7 @@
 						}
 					}
 					h3 {
-						font-size: 0.9rem;
+						font-size: 1rem;
 						color: #6f5a69;
 						font-weight: 400;
 					}
@@ -60,7 +62,7 @@
 			}
 
 			.btn-container-action {
-				margin-top: 2rem;
+				margin-top: 3rem;
 
 				.btn-reservation {
 					padding: 1.2rem 3.6rem;
@@ -111,10 +113,10 @@
 		position: relative;
 
 		.image-profile-container {
-			// border:1px solid red;
+			//border:1px solid red;
 			position: absolute;
-			top: 20px;
-			right: 50px;
+			top: 100px;
+			right:350px;
 			z-index: 3;
 
 			img {
@@ -123,12 +125,12 @@
 		}
 		button {
 			position: absolute;
-			top: 3.8rem;
-			right: 2.5rem;
+			top: 3rem;
+			left: 100px;
 			padding: 1rem 2.5rem;
 			color: white;
-			background: transparent;
-			border: 1px solid white;
+			background: $active-link-color;
+			border:1px solid transparent;
 			font-size: 0.7rem;
 			font-weight: 700;
 			text-transform: uppercase;
@@ -142,34 +144,36 @@
 			}
 			&:hover {
 				cursor: pointer;
-				background: $active-link-color;
-				border-color: transparent;
+				background: transparent;
+				border: 1px solid white;
 			}
 		}
 	}
 }
 
 .about-us {
-	background: $secondary-bg;
-	height: 650px;
+	background: $primary-links-color;
+	height: 700px;
 
 	.inner-about-us {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 0.5fr 1fr;
 		//border:1px solid red;
-		margin-top: 5rem;
+		margin-top: 6rem;
 
 		.image-profile {
 			//border:1px solid green;
 
-			@extend %flex-properties;
+			//@extend %flex-properties;
 			img {
-				width: 550px;
+				width: 600px;
 			}
 		}
 		.about-us-info {
+			
+		   padding:0 3rem;
 			* {
-				margin: 0.5rem 0;
+				margin: 15px 0;
 			}
 			h1 {
 				color: white;
@@ -179,17 +183,21 @@
 			}
 
 			p {
-				color: #dfddde;
+				//color: #dfddde;
+				color:white;
 				font-size: 1rem;
 				line-height: 1.8;
+				width:80%;
+				
 			}
 			button {
-				padding: 1rem 2.5rem;
+				padding: 1rem 3.5rem;
 				font-size: 0.9rem;
 				font-weight: 700;
 				background: $active-link-color;
 				transition: background 0.2s ease-out;
 				text-transform: uppercase;
+				
 
 				a {
 					color: white;
@@ -204,8 +212,6 @@
 
 .services {
 	.inner-services {
-		padding-top: 4rem;
-
 		margin: auto;
 		.services-title {
 			//border:1px solid red;
@@ -223,11 +229,7 @@
 				letter-spacing: 1px;
 				margin-top: 5px;
 			}
-			h2 {
-				color: $secondary-bg;
-				font-size: 3rem;
-				font-weight: 700;
-			}
+			
 		}
 		.services-features-container {
 			//border:1px solid green;
@@ -451,7 +453,7 @@
 			margin-top: 4rem;
 
 			h1 {
-				font-size: 4rem;
+				font-size: 3.5rem;
 				color: $secondary-bg;
 			}
 			p {

@@ -1,14 +1,14 @@
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   height: 100%;
   margin: auto;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .active-link {
@@ -35,7 +35,7 @@
   left: 0;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature .icon, .about-us .inner-about-us .image-profile, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container {
+.showcase .showcase-A .welcome-message .feature-services-container .feature .icon, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +51,12 @@
           justify-content: center;
 }
 
+.top-spacing {
+  padding-top: 4rem;
+}
+
 .title-heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #7c3367;
   font-family: "El Messiri", sans-serif;
   text-align: center;
@@ -65,6 +69,7 @@
   display: grid;
   -ms-grid-columns: 1.3fr 0.7fr;
       grid-template-columns: 1.3fr 0.7fr;
+  overflow: hidden;
 }
 
 .showcase .showcase-A {
@@ -81,12 +86,10 @@
           align-items: center;
 }
 
-.showcase .showcase-A .main-header {
-  width: 100%;
-}
-
 .showcase .showcase-A .welcome-message {
+  width: 100%;
   margin-top: 3rem;
+  margin-right: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,11 +103,11 @@
   font-family: "El Messiri", sans-serif;
   color: #7c3367;
   font-size: 4rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .showcase .showcase-A .welcome-message .feature-services-container {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .showcase .showcase-A .welcome-message .feature-services-container .feature {
@@ -132,13 +135,13 @@
 }
 
 .showcase .showcase-A .welcome-message .feature-services-container .feature h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #6f5a69;
   font-weight: 400;
 }
 
 .showcase .showcase-A .welcome-message .btn-container-action {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .showcase .showcase-A .welcome-message .btn-container-action .btn-reservation {
@@ -197,8 +200,8 @@
 
 .showcase .showcase-B .image-profile-container {
   position: absolute;
-  top: 20px;
-  right: 50px;
+  top: 100px;
+  right: 350px;
   z-index: 3;
 }
 
@@ -208,12 +211,12 @@
 
 .showcase .showcase-B button {
   position: absolute;
-  top: 3.8rem;
-  right: 2.5rem;
+  top: 3rem;
+  left: 100px;
   padding: 1rem 2.5rem;
   color: white;
-  background: transparent;
-  border: 1px solid white;
+  background: #e885a3;
+  border: 1px solid transparent;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -230,29 +233,33 @@
 
 .showcase .showcase-B button:hover {
   cursor: pointer;
-  background: #e885a3;
-  border-color: transparent;
+  background: transparent;
+  border: 1px solid white;
 }
 
 .about-us {
-  background: #7c3367;
-  height: 650px;
+  background: #8f4e7c;
+  height: 700px;
 }
 
 .about-us .inner-about-us {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  margin-top: 5rem;
+  -ms-grid-columns: 0.5fr 1fr;
+      grid-template-columns: 0.5fr 1fr;
+  margin-top: 6rem;
 }
 
 .about-us .inner-about-us .image-profile img {
-  width: 550px;
+  width: 600px;
+}
+
+.about-us .inner-about-us .about-us-info {
+  padding: 0 3rem;
 }
 
 .about-us .inner-about-us .about-us-info * {
-  margin: 0.5rem 0;
+  margin: 15px 0;
 }
 
 .about-us .inner-about-us .about-us-info h1 {
@@ -263,13 +270,14 @@
 }
 
 .about-us .inner-about-us .about-us-info p {
-  color: #dfddde;
+  color: white;
   font-size: 1rem;
   line-height: 1.8;
+  width: 80%;
 }
 
 .about-us .inner-about-us .about-us-info button {
-  padding: 1rem 2.5rem;
+  padding: 1rem 3.5rem;
   font-size: 0.9rem;
   font-weight: 700;
   background: #e885a3;
@@ -287,7 +295,6 @@
 }
 
 .services .inner-services {
-  padding-top: 4rem;
   margin: auto;
 }
 
@@ -302,12 +309,6 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 5px;
-}
-
-.services .inner-services .services-title h2 {
-  color: #7c3367;
-  font-size: 3rem;
-  font-weight: 700;
 }
 
 .services .inner-services .services-features-container {
@@ -554,7 +555,7 @@
 }
 
 .products .container .inner-products h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #7c3367;
 }
 

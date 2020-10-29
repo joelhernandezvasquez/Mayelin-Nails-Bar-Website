@@ -26,38 +26,31 @@ a {
   text-decoration: none;
 }
 
-.main-header {
+.main-nav {
+  width: 100%;
+  z-index: 5;
+}
+
+.main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 1.5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.main-header .main-nav {
-  margin-left: 2rem;
-  width: 100%;
-  z-index: 5;
-}
-
-.main-header .main-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.main-header .main-nav ul a {
+.main-nav ul a {
   color: #8f4e7c;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
 }
 
-.main-header .main-nav ul a:hover {
+.main-nav ul a:hover {
   color: #e885a3;
 }
 /*# sourceMappingURL=main.css.map */

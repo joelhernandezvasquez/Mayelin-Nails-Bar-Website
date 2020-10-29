@@ -28,22 +28,15 @@ a{
     text-decoration: none; 
 }
 
-.main-header{
-    
-    display:flex;
-    align-items: center;
-    padding:1rem 1.5rem;
-   
-    
+
     .main-nav{
-      
-        margin-left:2rem;
         width: 100%;
         z-index: 5;
         //border:1px solid red;
         ul{
             display: flex;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: space-evenly;
             //border:1px solid green;
             
           a{
@@ -60,5 +53,5 @@ a{
         }
     }
 
-}
+
 

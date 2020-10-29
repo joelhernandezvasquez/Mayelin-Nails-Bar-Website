@@ -1,17 +1,16 @@
 @import "variables";
 
 .container {
-	max-width: 1400px;
+	max-width: 1600px;
 	height: 100%;
 	margin: auto;
-	padding: 1rem;
-	margin-top: 1rem;
-	//border:1px solid black;
+	padding: 1rem 2rem;
+	border:1px solid black;
 }
 
 .logo {
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 
 	//border:1px solid red;
 }
@@ -46,9 +45,15 @@
 	justify-content: center;
 }
 
+.top-spacing{
+	padding-top:4rem;
+}
+
 .title-heading {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	color: $secondary-bg;
 	font-family: $secondary-font;
 	text-align: center;
 }
+
+
