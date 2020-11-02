@@ -5,7 +5,7 @@
 	height: 100%;
 	margin: auto;
 	padding: 1rem 2rem;
-	border:1px solid black;
+	//border:1px solid black;
 }
 
 .logo {
@@ -54,6 +54,27 @@
 	color: $secondary-bg;
 	font-family: $secondary-font;
 	text-align: center;
+}
+
+.btn-container{
+	         margin: 4rem 0;
+				@extend %flex-properties;
+
+				 button {
+					padding: 1.2rem 4rem;
+					
+
+					transition: all 0.2s ease-out;
+
+					
+				}
+				a {
+					color: white;
+					text-transform: uppercase;
+					font-size: 0.8rem;
+					font-weight: 700;
+					letter-spacing: 1px;
+				} 
 }
 
 

@@ -65,7 +65,7 @@
 				margin-top: 3rem;
 
 				.btn-reservation {
-					padding: 1.2rem 3.6rem;
+					padding: 1.2em 3.6rem;
 					background: $active-link-color;
 					transition: background 0.2s ease-out;
 					a {
@@ -162,9 +162,7 @@
 		margin-top: 6rem;
 
 		.image-profile {
-			//border:1px solid green;
-
-			//@extend %flex-properties;
+			
 			img {
 				width: 600px;
 			}
@@ -313,9 +311,13 @@
 	}
 }
 .eye-lashes-studio {
+
+	.container{ padding:0;}
+
 	.inner-eye-lashes-studio {
 		position: relative;
-		height: 650px;
+		width:100%;
+		height: 750px;
 		background-image: url("../assets/pexels-andrea-piacquadio-3757657.jpg");
 		background-position: center;
 		background-size: cover;
@@ -334,10 +336,12 @@
 				//border:1px solid red;
 				display: flex;
 				flex-direction: column;
-
-				* {
-					margin: 5px 0;
+				align-items: flex-start;
+			 
+				*{
+					margin:5px 0;
 				}
+				
 				h1 {
 					color: white;
 					font-size: 4rem;
@@ -350,11 +354,12 @@
 					font-size: 1.1rem;
 				}
 				.feature-services-container {
+					
 					.feature {
 						width: 140px;
 						display: flex;
 						align-items: center;
-						margin: 5px 0;
+						margin: 10px 0;
 
 						.icon {
 							width: 30px;
@@ -442,20 +447,20 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
+	padding-bottom: 4rem;
 
 	.overlay {
 		background: rgba(229, 189, 159, 0.2);
 	}
 	.container {
+		padding:0;
+		
 		.inner-products {
 			position: relative;
 			@extend %flex-properties;
-			margin-top: 4rem;
+			//margin-top: 4rem;
 
-			h1 {
-				font-size: 3.5rem;
-				color: $secondary-bg;
-			}
+			
 			p {
 				font-size: 1.1rem;
 				color: $secondary-bg;
@@ -494,7 +499,10 @@
 				}
 				.left-arrow-container {
 					//border:1px solid white;
+
 					position: absolute;
+					
+					left:5px;
 					transform: translateY(200px);
 					@extend %flex-properties;
 				}
@@ -544,14 +552,14 @@
 				.right-arrow-container {
 					position: absolute;
 					top: 0;
-					right: 1px;
+					right: 5px;
 					transform: translateY(200px);
 					@extend %flex-properties;
 					//border:1px solid yellow;
 				}
 
 				#btn-products-container {
-					margin-top: 3rem;
+					margin: 4rem 0;
 					@extend %flex-properties;
 
 					button {
@@ -589,24 +597,34 @@
 			margin-top: $top-spacing;
 
 			.tab-component {
-				border-radius: 3px;
-				//box-shadow: 3px 4px 10px 0px rgba(124, 51, 103, 0.3);
-				background: white;
 
 				.tab-navigation {
+					//border:1px solid black;
+					margin-top:1rem;
 					ul {
 						display: flex;
 						align-items: center;
-						justify-content: space-around;
+						justify-content: center;
 
 						li {
+							margin:0 4rem;
 							padding: 2rem 0 1rem 0;
-							font-size: 1.1rem;
-							color: $secondary-bg;
+							font-size: 0.9rem;
+							color: #333;
 							cursor: pointer;
+							text-transform: uppercase;
+							letter-spacing: 2px;
+							font-weight: 500;
+							font-weight: 500;
+
+							&:hover{
+								color:$active-link-color;
+							}
+							
 						}
 						.active-tab {
-							border-bottom: 2px solid $secondary-bg;
+							border-bottom: 2px solid $active-link-color;
+							color:$active-link-color;
 						}
 					}
 				}
@@ -618,19 +636,35 @@
 					.inner-gallery-nails {
 						display: grid;
 						grid-template-columns: repeat(3, 1fr);
+						//grid-template-rows: 500px 500px;
 						grid-gap: 20px;
 
-						img {
-							width: 100%;
-							object-fit: cover;
-							object-position: center;
-							border-radius: 5px;
+						div{
+							img {
+								width: 100%;
+								//height:100%;
+								object-fit: cover;
+								object-position: center;
+								border-radius: 5px;
+							}
+							&:hover{
+								cursor: pointer;
+							}
 						}
+
+						
+					}
+				
+					.inner-gallery-nails div:nth-child(2),.inner-gallery-nails div:nth-child(2) img,
+					.inner-gallery-nails div:nth-child(4),.inner-gallery-nails div:nth-child(4) img,
+					.inner-gallery-nails div:nth-child(6),.inner-gallery-nails div:nth-child(6) img
+					{
+						height:550px;
 					}
 				}
 			}
 			#btn-gallery-container {
-				margin-top: 3rem;
+				margin: 4rem 0;
 				@extend %flex-properties;
 
 				button {
@@ -649,6 +683,79 @@
 					font-size: 0.8rem;
 					font-weight: 700;
 					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
+
+.team{
+	height:100vh;
+	background:$light-pink;
+
+	.inner-team{
+		p{
+			color:$secondary-bg;
+			text-align:center;
+			font-size: 1.2rem;
+			font-style: italic;
+			font-weight: 500;
+		}
+
+		.specialist-container{
+		   // border:1px solid red;
+		   margin:1rem 0;
+			display:grid;
+			grid-template-columns: repeat(4,1fr);
+			grid-gap:10px;
+			
+
+			.team-card{
+				max-width: 350px;
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background:rgba(255,255,255,0.5);
+				padding:1rem 0.5rem 0.5rem 0.5rem;
+			
+			  .img-card-container{
+				  width:95%;
+				  
+				  img{
+					  border-radius: 5px;
+				  }
+			  }
+			  .body{
+				  display:flex;
+				  flex-direction: column;
+				  align-items: center;
+				  justify-content: center;
+				  padding:10px 0;
+				 
+
+				  h1{
+					  color:$secondary-bg;
+					  font-size:1.5rem;
+					  font-weight: 700;
+				  }
+				  h2{
+					  text-transform: uppercase;
+					  letter-spacing: 2px;
+					  font-size: 1rem;
+					  color:#8b7885;
+				  }
+
+			  }
+
+			}
+		}
+		.btn-container{
+			button{
+				background:$active-link-color;
+
+				&:hover{
+					background: $action-btn-bg;
 				}
 			}
 		}
