@@ -988,6 +988,7 @@
 
 .contact {
   height: 700px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .contact .inner-contact .grid-contact-info-container {
@@ -1000,6 +1001,41 @@
 
 .contact .inner-contact .grid-contact-info-container .info {
   border: 1px solid yellow;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card {
+  border: 1px solid silver;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card h2 {
+  color: #7c3367;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #6f5a69;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card .contact-features-container .contact-features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+      grid-template-columns: 20px 1fr;
+  margin: 25px 0;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card .contact-features-container .contact-features i {
+  font-size: 1.5rem;
+  color: #7c3367;
+}
+
+.contact .inner-contact .grid-contact-info-container .info .info-card .contact-features-container .contact-features p {
+  margin-left: 30px;
 }
 
 .contact .inner-contact .grid-contact-info-container .map {

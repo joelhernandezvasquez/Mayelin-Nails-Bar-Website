@@ -758,9 +758,9 @@
 			margin-top: 4rem;
 			width: 100%;
 			//border: 1px solid black;
-			display:grid;
-			grid-template-columns: repeat(3,400px);
-			grid-gap:20px;
+			display: grid;
+			grid-template-columns: repeat(3, 400px);
+			grid-gap: 20px;
 			align-items: center;
 			justify-content: center;
 
@@ -811,22 +811,21 @@
 				}
 			}
 
-			.carrousel-buttons{
-				
+			.carrousel-buttons {
 				grid-column: 1/4;
 				grid-row: 2/3;
-				display:flex;
+				display: flex;
 				justify-content: center;
 				margin-top: 4rem;
 
-				.carrousel-controller{
-					width:15px;
-					height:15px;
+				.carrousel-controller {
+					width: 15px;
+					height: 15px;
 					border-radius: 50%;
-					border:1px solid $secondary-bg;
-					margin:5px 10px;
+					border: 1px solid $secondary-bg;
+					margin: 5px 10px;
 
-					&:hover{
+					&:hover {
 						cursor: pointer;
 					}
 				}
@@ -835,25 +834,56 @@
 	}
 }
 
-.contact
-{
-	height:700px;
-	.inner-contact{
+.contact {
+	height: 700px;
 
-	.grid-contact-info-container{
-		border:1px solid red;
-		display:grid;
-		grid-template-columns: repeat(2,1fr);
+	background: rgba(255, 255, 255, 0.1);
+	.inner-contact {
+		.grid-contact-info-container {
+			border: 1px solid red;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 
-		.info{
-			border:1px solid yellow;
+			.info {
+				border: 1px solid yellow;
+
+				.info-card {
+					border: 1px solid silver;
+					width: 600px;
+					margin: 0 auto;
+
+					h2 {
+						color: $secondary-bg;
+						font-size: 2.5rem;
+						font-weight: 700;
+					}
+					p {
+						line-height: 1.8;
+						font-size: 1rem;
+						color: #6f5a69;
+					}
+
+					.contact-features-container {
+						.contact-features {
+							display: grid;
+							grid-template-columns: 20px 1fr;
+							margin: 25px 0;
+							//border: 1px solid red;
+
+							i {
+								font-size: 1.5rem;
+								color: $secondary-bg;
+							}
+							p {
+								margin-left: 30px;
+							}
+						}
+					}
+				}
+			}
+			.map {
+				border: 1px solid blue;
+			}
 		}
-		.map{
-			border:1px solid blue;
-		}
-
 	}
-}
-
-
 }
