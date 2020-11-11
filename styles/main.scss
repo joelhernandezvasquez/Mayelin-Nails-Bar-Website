@@ -50,16 +50,15 @@ a {
 
 			.items {
 				margin: 0 2rem;
-			}
-
-			a {
-				color: $primary-links-color;
-				font-weight: 600;
-				text-transform: uppercase;
-				font-size: 0.8rem;
-			}
-			a:hover {
-				color: $active-link-color;
+				a {
+					color: $primary-links-color;
+					font-weight: 500;
+					text-transform: uppercase;
+					font-size: 0.8rem;
+				}
+				a:hover {
+					color: $primary-links-color;
+				}
 			}
 		}
 		button {

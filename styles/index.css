@@ -87,7 +87,7 @@
 
 .showcase .welcome-message {
   width: 100%;
-  margin-top: 3rem;
+  margin: 3.5rem 0;
 }
 
 .showcase .welcome-message h1 {
@@ -205,48 +205,6 @@
   width: 700px;
 }
 
-/* .showcase-B {
-		background: $secondary-bg;
-		//background: $main-bg;
-		position: relative;
-
-		.image-profile-container {
-			//border:1px solid red;
-			position: absolute;
-			top: 100px;
-			right: 300px;
-			z-index: 3;
-
-			img {
-				width: 700px;
-			}
-		}
-		button {
-			position: absolute;
-			top: 3rem;
-			left: 100px;
-			padding: 1rem 2.5rem;
-			color: white;
-			background: $active-link-color;
-			border: 1px solid transparent;
-			font-size: 0.7rem;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			z-index: 5;
-			transition: background 0.2s ease-out, border-color 0.2s ease-out;
-
-			i {
-				color: white;
-				margin-right: 2px;
-			}
-			&:hover {
-				cursor: pointer;
-				background: transparent;
-				border: 1px solid white;
-			}
-		}
-	} */
 .about-us {
   background: #8f4e7c;
   height: 700px;

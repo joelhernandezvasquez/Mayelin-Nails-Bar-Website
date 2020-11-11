@@ -16,9 +16,9 @@
 }
 
 .active-link {
-	color: $active-link-color !important;
+	color: $secondary-bg !important;
 	font-weight: 700;
-	border-bottom: 2px solid $active-link-color;
+	border-bottom: 2px solid $secondary-bg;
 }
 
 .btn {

@@ -63,15 +63,15 @@ a {
   margin: 0 2rem;
 }
 
-.main-nav .container ul a {
+.main-nav .container ul .items a {
   color: #8f4e7c;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
-.main-nav .container ul a:hover {
-  color: #e885a3;
+.main-nav .container ul .items a:hover {
+  color: #8f4e7c;
 }
 
 .main-nav .container button {
