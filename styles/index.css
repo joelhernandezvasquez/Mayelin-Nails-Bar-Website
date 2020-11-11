@@ -34,7 +34,7 @@
   left: 0;
 }
 
-.btn-container, .showcase .showcase-A .welcome-message .feature-services-container .feature .icon, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container, .footer .inner-footer .links-social-medial-container .social-media div {
+.btn-container, .showcase .welcome-message .feature-services-container .feature .icon, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container, .footer .inner-footer .links-social-medial-container .social-media div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,52 +82,26 @@
 .showcase {
   width: 100%;
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.3fr 0.7fr;
-      grid-template-columns: 1.3fr 0.7fr;
-  overflow: hidden;
-}
-
-.showcase .showcase-A {
   background: #fbecf1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.showcase .showcase-A .welcome-message {
+.showcase .welcome-message {
   width: 100%;
   margin-top: 3rem;
-  margin-right: 7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.showcase .showcase-A .welcome-message h1 {
+.showcase .welcome-message h1 {
   font-family: "El Messiri", sans-serif;
   color: #7c3367;
   font-size: 4rem;
   line-height: 1.2;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container {
+.showcase .welcome-message .feature-services-container {
   margin-top: 2rem;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature {
+.showcase .welcome-message .feature-services-container .feature {
   width: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,7 +112,7 @@
   margin: 0.8rem 0;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature .icon {
+.showcase .welcome-message .feature-services-container .feature .icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -146,29 +120,29 @@
   margin-right: 1.2rem;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature .icon i {
+.showcase .welcome-message .feature-services-container .feature .icon i {
   font-size: 1rem;
   color: #e885a3;
 }
 
-.showcase .showcase-A .welcome-message .feature-services-container .feature h3 {
+.showcase .welcome-message .feature-services-container .feature h3 {
   font-size: 1rem;
   color: #6f5a69;
   font-weight: 400;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action {
+.showcase .welcome-message .btn-container-action {
   margin-top: 3rem;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation {
+.showcase .welcome-message .btn-container-action .btn-reservation {
   padding: 1.2em 3.6rem;
   background: #e885a3;
   -webkit-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation a {
+.showcase .welcome-message .btn-container-action .btn-reservation a {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -176,17 +150,17 @@
   letter-spacing: 1px;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation i {
+.showcase .welcome-message .btn-container-action .btn-reservation i {
   color: white;
   margin-right: 5px;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-reservation:hover {
+.showcase .welcome-message .btn-container-action .btn-reservation:hover {
   background: #e2668b;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios {
-  padding: 1.2rem 3rem;
+.showcase .welcome-message .btn-container-action .btn-servicios {
+  padding: 1rem 4rem;
   background: transparent;
   border: 1px solid #e885a3;
   margin-left: 1rem;
@@ -194,7 +168,7 @@
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios a {
+.showcase .welcome-message .btn-container-action .btn-servicios a {
   color: #7c3367;
   font-size: 0.7rem;
   letter-spacing: 1px;
@@ -202,58 +176,77 @@
   text-transform: uppercase;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios:hover {
+.showcase .welcome-message .btn-container-action .btn-servicios:hover {
   background: #e885a3;
 }
 
-.showcase .showcase-A .welcome-message .btn-container-action .btn-servicios:hover a {
+.showcase .welcome-message .btn-container-action .btn-servicios:hover a {
   color: white;
 }
 
-.showcase .showcase-B {
+.showcase .image-area {
   background: #7c3367;
-  position: relative;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.showcase .showcase-B .image-profile-container {
+.showcase .image-area .image-profile-container {
   position: absolute;
   top: 100px;
-  right: 350px;
+  right: 300px;
   z-index: 3;
+  overflow-x: hidden;
 }
 
-.showcase .showcase-B .image-profile-container img {
+.showcase .image-area .image-profile-container img {
   width: 700px;
 }
 
-.showcase .showcase-B button {
-  position: absolute;
-  top: 3rem;
-  left: 100px;
-  padding: 1rem 2.5rem;
-  color: white;
-  background: #e885a3;
-  border: 1px solid transparent;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 5;
-  -webkit-transition: background 0.2s ease-out, border-color 0.2s ease-out;
-  transition: background 0.2s ease-out, border-color 0.2s ease-out;
-}
+/* .showcase-B {
+		background: $secondary-bg;
+		//background: $main-bg;
+		position: relative;
 
-.showcase .showcase-B button i {
-  color: white;
-  margin-right: 2px;
-}
+		.image-profile-container {
+			//border:1px solid red;
+			position: absolute;
+			top: 100px;
+			right: 300px;
+			z-index: 3;
 
-.showcase .showcase-B button:hover {
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid white;
-}
+			img {
+				width: 700px;
+			}
+		}
+		button {
+			position: absolute;
+			top: 3rem;
+			left: 100px;
+			padding: 1rem 2.5rem;
+			color: white;
+			background: $active-link-color;
+			border: 1px solid transparent;
+			font-size: 0.7rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			z-index: 5;
+			transition: background 0.2s ease-out, border-color 0.2s ease-out;
 
+			i {
+				color: white;
+				margin-right: 2px;
+			}
+			&:hover {
+				cursor: pointer;
+				background: transparent;
+				border: 1px solid white;
+			}
+		}
+	} */
 .about-us {
   background: #8f4e7c;
   height: 700px;
@@ -1214,7 +1207,8 @@
   font-size: 1rem;
 }
 
-.footer .inner-footer .inner-info-container div:nth-child(1) p, .footer .inner-footer .inner-info-container div:nth-child(2) p {
+.footer .inner-footer .inner-info-container div:nth-child(1) p,
+.footer .inner-footer .inner-info-container div:nth-child(2) p {
   line-height: 1.8;
 }
 
@@ -1298,7 +1292,7 @@
   height: 40px;
   border-radius: 50%;
   background: white;
-  margin: 0  10px;
+  margin: 0 10px;
 }
 
 .footer .inner-footer .links-social-medial-container .social-media div i {
