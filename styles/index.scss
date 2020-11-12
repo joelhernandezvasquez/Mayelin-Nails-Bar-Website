@@ -16,7 +16,7 @@
 			font-family: $secondary-font;
 			color: $secondary-bg;
 			font-size: 4rem;
-			line-height: 1.2;
+			line-height: 1.3;
 		}
 
 		.feature-services-container {
@@ -53,21 +53,22 @@
 
 			.btn-reservation {
 				padding: 1.2em 3.6rem;
-				background: $active-link-color;
+				background: $action-btn-bg;
+				
 				transition: background 0.2s ease-out;
 				a {
 					color: white;
 					font-weight: 700;
 					text-transform: uppercase;
-					font-size: 0.7rem;
-					letter-spacing: 1px;
+					font-size: 0.72rem;
+					letter-spacing: 2px;
 				}
 				i {
 					color: white;
 					margin-right: 5px;
 				}
 				&:hover {
-					background: $action-btn-bg;
+					background: $active-link-color;
 				}
 			}
 			.btn-servicios {
@@ -79,8 +80,8 @@
 
 				a {
 					color: $secondary-bg;
-					font-size: 0.7rem;
-					letter-spacing: 1px;
+					font-size: 0.72rem;
+					letter-spacing: 2px;
 					font-weight: 700;
 					text-transform: uppercase;
 				}

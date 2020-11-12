@@ -9,16 +9,17 @@
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
+	width:85px;
+	height: 85px;
 
 	//border:1px solid red;
 }
 
 .active-link {
-	color: $secondary-bg !important;
-	font-weight: 700;
-	border-bottom: 2px solid $secondary-bg;
+	//color: #5B254B !important;
+	color:$secondary-bg;
+	border-bottom: 2px solid #5B254B;
+	//font-weight: 700 !important;
 }
 
 .btn {
