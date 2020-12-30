@@ -1,700 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <link href="styles/utility.css" rel="stylesheet">
-     <link href="styles/mediaQuery.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="styles/mediaQuery.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/animation.js" defer></script>
-  
+
     <title>Home</title>
 </head>
+
 <body>
-    
+
     <div class="showcase">
-       
-         <nav class="main-nav">
-                       <div class="container">
-                       
-                        <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo"/></div>
-                       
+
+        <nav class="main-nav">
+            <div class="container">
+
+                <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo" /></div>
+
+                <ul>
+                    <li class="items"> <a href="#" class="active-link  link"> Home</a></li>
+                    <li class="items"> <a href="#" class="link"> Sobre Nosotros</a>
+                        <div class="link-border"></div>
+                    </li>
+                    <li class="items"> <a href="#" class="link"> Servicios</a>
+                        <div class="link-border"></div>
+                    </li>
+                    <li class="items"> <a href="#" class="link"> Productos</a>
+                        <div class="link-border"></div>
+                    </li>
+                    <li class="items"> <a href="#" class="link"> Lashes Studio</a>
+                        <div class="link-border"></div>
+                    </li>
+                    <li class="items"> <a href="#" class="link"> Galleria</a>
+                        <div class="link-border"></div>
+                    </li>
+                    <li class="items"> <a href="#" class="link"> Contacto</a>
+                        <div class="link-border"></div>
+                    </li>
+                </ul>
+
+                <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#">
+                        Reservacion</a></button>
+
+
+            </div>
+        </nav>
+
+        <nav class="tablet-nav">
+            <div class="container">
+
+                <div class="hamburger-menu">
+                    <i class="fa fa-bars icon-menu" aria-hidden="true"></i>
+                </div>
+
+                <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo" /></div>
+
+                 <button class="btn reservation-btn"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#">
+                        Reservacion</a></button> 
+
+             
+
+            </div>
+        </nav>
+
+
+
+
+        <div class="welcome-message">
+            <div class="container grid-2">
+                <div class="showcase-info">
+                    <h1> Mayelin Nails & Bar</h1>
+                    <h1>La Magia de los Detalles</h1>
+                    <h1>En un Solo Lugar</h1>
+                    <div class="feature-services-container">
+                        <div class="feature">
+                            <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                            <h3> Nails</h3>
+                        </div>
+                        <div class="feature">
+                            <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                            <h3> Manicure</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                            <h3> Pedicure</h3>
+                        </div>
+                        <div class="feature">
+                            <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                            <h3> Eye Lashes</h3>
+                        </div>
+                        <div class="feature">
+                            <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                            <h3> Drinks</h3>
+                        </div>
+                    </div>
+                    <div class="btn-container-action">
+                        <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a
+                                href="#"> Reservacion</a></button>
+                        <button class="btn btn-servicios"> <a href="#"> Servicios</a></button>
+                    </div>
+                </div>
+
+                <div class="image-profile-container">
+                    <img src="assets/64873517_2431128940263758_3011762133177204736_o-removebg-preview.png">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="inner-about-us">
+                <div class="image-profile">
+                    <img src="assets/about us profile.jpg" alt="mayelin_team">
+                </div>
+
+                <div class="about-us-info">
+                    <h1> About us</h1>
+                    <p> Mayelin Nails & Bar was founded by Mayelin Romero Camilo over 5 years ago. Today Mayelin
+                        is recognized as one of Dominican Republic top nails beauty expert. Nails is created with love
+                        for
+                        those who like beautifull design and fresh style. In Mayelin Nails & Bar you can find peace and
+                        break
+                        away from everyday matters.
+                    </p>
+
+                    <p> Mayelin's team created some of the most glamorous and memorable looks to on Fashion week Berlin.
+                        Amy is also the official best nails installers and created in the Cibao.
+                    </p>
+                    <button class="btn"> <a href="#"> Read More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="inner-services top-spacing">
+                <div class="services-title">
+                    <h2 class="title-heading"> Nuestros Servicios</h2>
+                </div>
+                <div class="services-features-container">
+
+                    <div class="card">
+                        <div class="nails"></div>
+
+                        <div class="card-details">
+                            <h2>Nails</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                            </p>
+                            <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="manicure"> </div>
+
+                        <div class="card-details">
+                            <h2>Manicure</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                            </p>
+                            <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="pedicure"> </div>
+
+                        <div class="card-details">
+                            <h2>Pedicure</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                            </p>
+                            <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="lashes"></div>
+
+                        <div class="card-details">
+                            <h2>Lashes</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
+                            </p>
+                            <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div id="services-btn-container">
+                    <button class="btn"> <a href="#">Explorar Servicios</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eye-lashes-studio">
+
+        <div class="overlay"> </div>
+        <div class="container">
+
+            <div class="inner-eye-lashes-studio top-spacing">
+
+                <div class="container-lashes">
+                    <div class="lashes-info">
+                        <h1> Lash Studio</h1>
+                        <p> Lash Studio abre sus puertas, y estamos a su disposicion para dejarte una mirada que impacte
+                            con unas pestañas de calidad en manos de una profesional. Gracias a todos por su inmenso
+                            apoyo y esto es
+                            para ustedes!
+                        </p>
+
+                        <div class="feature-services-container">
+                            <div class="feature">
+                                <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                <h3> Nails</h3>
+                            </div>
+                            <div class="feature">
+                                <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                <h3> Manicure</h3>
+                            </div>
+
+                            <div class="feature">
+                                <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                <h3> Pedicure</h3>
+                            </div>
+                            <div class="feature">
+                                <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                <h3> Eye Lashes</h3>
+                            </div>
+                            <div class="feature">
+                                <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
+                                <h3> Drinks</h3>
+                            </div>
+                        </div>
+
+                        <div id="reservacion-btn-container">
+                            <button class="btn"> <a href=""> Reservacion</a></button>
+                        </div>
+                    </div>
+
+                    <div class="video-container">
+                        <div id="video-outter-layer">
+                            <div id="video-inner-layer">
+                                <div id="video-base-layer">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="inner-products top-spacing">
+                <h1 class="title-heading"> Nuestros Productos </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam.</p>
+
+                <div class="carrousel">
+                    <div class="left-arrow-container">
+                        <div class="arrow">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-containers">
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+                        <div class="card-product">
+                            <img
+                                src="assets/gelish-selfie-2017-gel-nail-polish-collection-all-about-the-pout-15ml-p22117-89686_zoom.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+
+                        <div class="card-product">
+                            <img
+                                src="assets/gelish-soak-off-gel-nail-polish-mini-nourish-cuticle-oil-9ml-p25064-98803_zoom.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+
+                        <div class="card-product">
+                            <img src="assets/5.jpg">
+                            <h2> Critical Repair</h2>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
+                            <span> $200</span>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="right-arrow-container">
+
+                        <div class="arrow">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div id="btn-products-container">
+                        <button class="btn btn-product"> <a href="#"> Ver Productos</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="gallery">
+
+        <div class="container">
+            <div class="inner-gallery">
+                <h1 class="title-heading"> Galleria </h1>
+
+                <div class="tab-component">
+                    <div class="tab-navigation">
                         <ul>
-                        <li class="items"> <a href="#" class="active-link  link"> Home</a></li>
-                        <li class="items"> <a href="#" class="link"> Sobre Nosotros</a> <div class="link-border"></div></li>
-                        <li class="items"> <a href="#"  class="link"> Servicios</a> <div class="link-border"></div></li>
-                        <li class="items"> <a href="#"  class="link"> Productos</a> <div class="link-border"></div></li>
-                        <li class="items"> <a href="#"  class="link"> Lashes Studio</a> <div class="link-border"></div></li>
-                        <li class="items"> <a href="#"  class="link"> Galleria</a> <div class="link-border"></div></li>
-                        <li class="items"> <a href="#" class="link"> Contacto</a> <div class="link-border"></div></li>
+                            <li class="active-tab"> Unas </li>
+                            <li> Manicure</li>
+                            <li> Pedicure</li>
+                            <li> Lashes</li>
+                            <li> Drinks</li>
                         </ul>
-                        
-                        <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#"> Reservacion</a></button>
-
-                   
                     </div>
-                   </nav>
 
-                   <nav class="tablet-nav">
-                       <div class="container">
-                          
-                        <div class="hamburger-menu">
-                            <i class="fa fa-bars icon-menu" aria-hidden="true"></i>
-                          </div>
-                          
-                          <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo"/></div>
-                          
-                          <button class="btn reservation-btn"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#"> Reservacion</a></button>
-                       
+                    <div class="tab-body top-spacing">
+
+                        <div class="inner-gallery-nails">
+
+                            <div>
+                                <img src="assets/89600916_2981146595261987_2232424876910575616_o.jpg">
+                            </div>
+
+                            <div>
+                                <img src="assets/117262573_3370998762943433_6009864393719638103_o.jpg">
+                            </div>
+
+                            <div>
+                                <img src="assets/87387189_2943403172369663_6154697038635204608_o.jpg">
+                            </div>
+
+                            <div>
+                                <img src="assets/118859158_3453841084659200_7933718843341672383_o.jpg">
+                            </div>
+
+                            <div>
+                                <img src="assets/nails.jpg">
+                            </div>
+
+                            <div>
+                                <img src="assets/122147082_3603440346365939_8931922470658896035_o.jpg">
+                            </div>
+
+
                         </div>
-                   </nav>
-
-                   
-              
-
-               <div class="welcome-message">
-                   <div class="container grid-2">
-                       <div class="showcase-info">
-                   <h1> Mayelin Nails & Bar</h1>
-                   <h1>La Magia de los Detalles</h1>
-                   <h1>En un Solo Lugar</h1>
-                   <div class="feature-services-container">
-                      <div class="feature">
-                          <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                          <h3> Nails</h3>
-                      </div>
-                      <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Manicure</h3>
                     </div>
 
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Pedicure</h3>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Eye Lashes</h3>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Drinks</h3> 
-                    </div>
-                   </div>
-                   <div class="btn-container-action">
-                    <button class="btn btn-reservation"> <i class="fa fa-calendar-o" aria-hidden="true"></i><a href="#"> Reservacion</a></button>
-                    <button class="btn btn-servicios"> <a href="#"> Servicios</a></button>
-                   </div>
-               </div>
+                </div>
 
-               <div class="image-profile-container">
-                <img src="assets/64873517_2431128940263758_3011762133177204736_o-removebg-preview.png">  
-              </div>
-              
+                <div id="btn-gallery-container">
+                    <button class="btn btn-product"> <a href="#"> Ver Photos</a></button>
+                </div>
             </div>
-               </div>
-            
-               
-               
-           
-          
-</div>
-
-<section class="about-us">
-   <div class="container">
-       <div class="inner-about-us">
-           <div class="image-profile">
-             <img src="assets/about us profile.jpg" alt="mayelin_team">
-           </div>
-
-           <div class="about-us-info">
-              <h1> About us</h1>
-              <p> Mayelin Nails & Bar was founded by Mayelin Romero Camilo over 5 years ago. Today Mayelin
-                  is recognized as one of Dominican Republic top nails beauty expert. Nails is created with love for
-                those who like beautifull design and fresh style. In Mayelin Nails & Bar you can find peace and break
-            away from everyday matters.
-           </p>
-
-           <p> Mayelin's team created some of the most glamorous and memorable looks to on Fashion week Berlin.
-               Amy is also the official best nails installers and created in the Cibao.
-           </p>
-             <button class="btn"> <a href="#"> Read More</a></button>
-            </div>
-       </div>
-   </div>
-</section>
-
-<section class="services">
- <div class="container">
-      <div class="inner-services top-spacing">
-          <div class="services-title">
-              <h2 class="title-heading"> Nuestros Servicios</h2>
-          </div>
-          <div class="services-features-container">
-              
-           <div class="card">
-             <div class="nails"></div>
-             
-             <div class="card-details">
-                <h2>Nails</h2>
-                <p> 
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
-                </p>
-                <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-             </div>
-            
-           </div>
-           
-
-              <div class="card">
-                <div class="manicure"> </div>
-
-                <div class="card-details">
-                    <h2>Manicure</h2>
-                    <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
-                     </p>
-                     <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-               
-               
-             </div>
-
-             <div class="card">
-                <div class="pedicure"> </div>
-
-                <div class="card-details">
-                    <h2>Pedicure</h2>
-                    <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
-                     </p>
-                     <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-               
-               
-             </div>
-
-             <div class="card">
-                <div class="lashes"></div>
-
-                <div class="card-details">
-                    <h2>Lashes</h2>
-                    <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, expedita.
-                     </p>
-                     <a href="#"> Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                </div>
-               
-               
-             </div>
-
-             
-          </div>
-          <div id="services-btn-container">
-              <button class="btn"> <a href="#">Explorar Servicios</a></button>
-          </div>
-      </div>
- </div>
-</section>
-
-<section class="eye-lashes-studio">
-
-    <div class="overlay">  </div>
-    <div class="container">
-       
-        <div class="inner-eye-lashes-studio top-spacing">
-            
-           <div class="container-lashes">
-               <div class="lashes-info">
-                 <h1> Lash Studio</h1>
-                 <p> Lash Studio abre sus puertas, y estamos a su disposicion para dejarte una mirada que impacte 
-                     con unas pestañas de calidad en manos de una profesional. Gracias a todos por su inmenso apoyo y esto es 
-                     para ustedes!
-                 </p>
-
-                <div class="feature-services-container">
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Nails</h3>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Manicure</h3>
-                    </div>
-                
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Pedicure</h3>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Eye Lashes</h3>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
-                        <h3> Drinks</h3>
-                    </div>
-                </div>
-                
-                <div id="reservacion-btn-container">
-                    <button class="btn"> <a href=""> Reservacion</a></button>
-                </div>
-               </div>
-
-               <div class="video-container">
-                   <div id="video-outter-layer">
-                     <div id="video-inner-layer">
-                       <div id="video-base-layer">
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                       </div>  
-                     </div>
-                   </div>
-               </div>
-           </div>
         </div>
-    </div>
-</section>
 
-<section class="products">
-    <div class="overlay"></div>
+    </section>
 
-    <div class="container">
-       <div class="inner-products top-spacing">
-         <h1 class="title-heading"> Nuestros Productos   </h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam.</p>  
+    <section class="team">
 
-           <div class="carrousel">
-              <div class="left-arrow-container">
-                <div class="arrow">
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </div>
-               </div> 
-
-               <div class="card-containers">
-                  <div class="card-product">
-                      <img src="assets/5.jpg">
-                    <h2> Critical Repair</h2>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                    <span> $200</span> 
-
-                  </div>
-                   <div class="card-product">
-                     <img src="assets/gelish-selfie-2017-gel-nail-polish-collection-all-about-the-pout-15ml-p22117-89686_zoom.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span> 
-
-                 </div>
-
-                  <div class="card-product">
-                     <img src="assets/gelish-soak-off-gel-nail-polish-mini-nourish-cuticle-oil-9ml-p25064-98803_zoom.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span> 
-
-                 </div>
-
-                   <div class="card-product">
-                    <img src="assets/5.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span>
-
-                 </div>
-                 <div class="card-product">
-                    <img src="assets/5.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span>
-
-                 </div>
-                 <div class="card-product">
-                    <img src="assets/5.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span>
-
-                 </div>
-
-                 <div class="card-product">
-                    <img src="assets/5.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span>
-
-                 </div>
-
-                 <div class="card-product">
-                    <img src="assets/5.jpg">
-                   <h2> Critical Repair</h2>
-                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, distinctio.</p>
-                   <span> $200</span>
-
-                 </div>  
- 
-                
-                  
-               </div>
-
-               <div class="right-arrow-container">
-                
-                <div class="arrow">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    
-                </div>
-                
-               </div> 
-
-               <div id="btn-products-container">
-                   <button class="btn btn-product"> <a href="#"> Ver Productos</a></button>
-               </div>
-           </div> 
-       </div> 
-    </div>
-    
-</section>
+        <div class="container">
+            <div class="inner-team top-spacing">
+                <h1 class="title-heading">Our Team</h1>
 
 
-<section class="gallery">
+                <div class="specialist-container">
+                    <div class="team-card">
+                        <div class="img-card-container">
+                            <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
+                        </div>
+                        <div class="body">
+                            <h1> Mayelin Romero</h1>
+                            <h2>CEO</h2>
+                        </div>
 
-    <div class="container">
-        <div class="inner-gallery">
-            <h1 class="title-heading"> Galleria </h1>
+                    </div>
 
-            <div class="tab-component">
-                <div class="tab-navigation">
-                    <ul>
-                     <li class="active-tab"> Unas </li>
-                     <li> Manicure</li>
-                     <li> Pedicure</li>
-                     <li> Lashes</li>
-                     <li> Drinks</li>
-                    </ul>
+                    <div class="team-card">
+                        <div class="img-card-container">
+                            <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
+                        </div>
+                        <div class="body">
+                            <h1> Mayelin Romero</h1>
+                            <h2>Manicurista</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="team-card">
+                        <div class="img-card-container">
+                            <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
+                        </div>
+                        <div class="body">
+                            <h1> Mayelin Romero</h1>
+                            <h2>CEO</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="team-card">
+                        <div class="img-card-container">
+                            <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
+                        </div>
+                        <div class="body">
+                            <h1> Mayelin Romero</h1>
+                            <h2>CEO</h2>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
-                <div class="tab-body top-spacing">
-                 
-                    <div class="inner-gallery-nails">
-                       
+                <div class="btn-container">
+                    <button class="btn"> <a href="#"> Ver Personal</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="inner-testimonials top-spacing">
+                <h1 class="title-heading"> Client Testimonials</h1>
+
+                <div class="horizontal-carrousel">
+                    <div class="testimonial-card">
+                        <div class="head-card">
+                            <div class="head-card-img-container">
+                                <img src="assets/pexels-ali-pazani-2772099.jpg">
+                            </div>
+                            <div class="head-card-user">
+                                <h3>Andrea Smith</h3>
+                                <h3> Verified Buyer</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio
+                                accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="head-card">
+                            <div class="head-card-img-container">
+                                <img src="assets/pexels-ali-pazani-2772099.jpg">
+                            </div>
+                            <div class="head-card-user">
+                                <h3>Andrea Smith</h3>
+                                <h3> Verified Buyer</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio
+                                accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="head-card">
+                            <div class="head-card-img-container">
+                                <img src="assets/pexels-ali-pazani-2772099.jpg">
+                            </div>
+                            <div class="head-card-user">
+                                <h3>Andrea Smith</h3>
+                                <h3> Verified Buyer</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio
+                                accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carrousel-buttons">
+                        <div class="carrousel-controller"></div>
+                        <div class="carrousel-controller"></div>
+                        <div class="carrousel-controller"></div>
+                        <div class="carrousel-controller"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="inner-contact top-spacing">
+                <h1 class="title-heading"> Contacto</h1>
+                <div class="grid-contact-info-container">
+                    <div class="info">
+                        <div class="info-card">
+                            <h2> Get in Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non enim fuga ad, nam
+                                magni fugit. Voluptate odio
+                                itaque minima voluptas iste maxime! Perspiciatis, iste?</p>
+                            <div class="contact-features-container">
+                                <div class="contact-features">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="contact-features">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="contact-features">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="contact-form-grid-container">
+
+                        <div class="contact-form">
+                            <h2> Say Something</h2>
+                            <form>
+                                <div class="input-controls">
+                                    <div>
+                                        <input type="text" id="first-name" placeholder="First Name *">
+                                    </div>
+                                    <div>
+                                        <input type="text" id="last-name" placeholder="Last Name *">
+                                    </div>
+
+                                    <div>
+                                        <input type="text" id="email" placeholder="Email*">
+                                    </div>
+
+                                    <div>
+                                        <input type="text" id="comment" placeholder="Message*">
+                                    </div>
+                                </div>
+
+                                <div class="btn-container">
+                                    <input class="btn" type="submit" id="submit" value="Send">
+                                </div>
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="map">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1881.9277600445043!2d-70.35214105132081!3d19.375407647530906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8eae28d8fbfb031f%3A0x54ec362bdd44c8cd!2sMayelin%20Nails%20And%20Bar%2C%20Tenares%2034000%2C%20Dominican%20Republic!3m2!1d19.3753191!2d-70.3513042!5e0!3m2!1sen!2sus!4v1604411241608!5m2!1sen!2sus"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="inner-footer top-spacing">
+                <div class="inner-heading-container">
+                    <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo" /></div>
+                    <div id="heading-footer">
+                        <h2>Saturday is a day for the spa</h2>
+                        <h2>Relex, indulge, enjoy, and love yourself. too.</h2>
+                    </div>
+                </div>
+
+                <div class="inner-info-container top-spacing">
+                    <div class="card">
+                        <h3>our location</h3>
+                        <p>New York, USA – 1060</p>
+                        <p> First Avenue, Muswell Hill</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Opening Hours</h3>
                         <div>
-                            <img src="assets/89600916_2981146595261987_2232424876910575616_o.jpg">
+                            <p>Monday – Friday</p>
+                            <p>8:00 AM – 05:00 PM</p>
                         </div>
 
                         <div>
-                            <img src="assets/117262573_3370998762943433_6009864393719638103_o.jpg">
+                            <p>Saturday</p>
+                            <p> 8:00 AM – 05:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Quick Contact</h3>
+                        <p>Feel Free to call</p>
+                        <p id="contact-number">1(809)-447-9942</p>
+                        <p>office@mailyspa.com</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="btn-container">
+                            <button class="btn"> Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="links-social-medial-container top-spacing">
+
+                    <nav>
+                        <ul>
+                            <li class="items"> <a href="#"> Home</a></li>
+                            <li class="items"> <a href="#"> Sobre Nosotros</a></li>
+                            <li class="items"> <a href="#"> Servicios</a></li>
+                            <li class="items"> <a href="#"> Productos</a></li>
+                            <li class="items"> <a href="#"> Lashes Studio</a></li>
+                            <li class="items"> <a href="#"> Galleria</a></li>
+                            <li class="items"> <a href="#"> Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="social-media">
+                        <div>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
                         </div>
 
                         <div>
-                            <img src="assets/87387189_2943403172369663_6154697038635204608_o.jpg">    
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
                         </div>
-                        
+
                         <div>
-                            <img src="assets/118859158_3453841084659200_7933718843341672383_o.jpg">
-                        </div>
-                        
-                        <div>
-                            <img src="assets/nails.jpg">    
-                        </div>
-                        
-                        <div>
-                            <img src="assets/122147082_3603440346365939_8931922470658896035_o.jpg">
-                        </div>
-                       
-                  
-                    </div>
-                </div>
-                
-            </div>
-
-            <div id="btn-gallery-container">
-                <button class="btn btn-product"> <a href="#"> Ver Photos</a></button>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="team">
-
- <div class="container">
-      <div class="inner-team top-spacing">
-        <h1 class="title-heading">Our Team</h1>
-        
-      
-         <div class="specialist-container">
-              <div class="team-card">
-                <div class="img-card-container">
-                     <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
-                </div>
-                <div class="body">
-                    <h1> Mayelin Romero</h1>
-                    <h2>CEO</h2>
-                </div>
-
-              </div>
-
-              <div class="team-card">
-                <div class="img-card-container">
-                     <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
-                </div>
-                <div class="body">
-                    <h1> Mayelin Romero</h1>
-                    <h2>Manicurista</h2>
-                </div>
-
-              </div>
-
-              <div class="team-card">
-                <div class="img-card-container">
-                     <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
-                </div>
-                <div class="body">
-                    <h1> Mayelin Romero</h1>
-                    <h2>CEO</h2>
-                </div>
-
-              </div>
-
-              <div class="team-card">
-                <div class="img-card-container">
-                     <img src="assets/andriyko-podilnyk-jFAG_ixCrsM-unsplash.jpg">
-                </div>
-                <div class="body">
-                    <h1> Mayelin Romero</h1>
-                    <h2>CEO</h2>
-                </div>
-
-              </div>
-              
-
-         </div>
-
-         <div class="btn-container">
-            <button class="btn"> <a href="#"> Ver Personal</a></button>
-        </div>
-      </div>
- </div>
-</section>
-
-<section class="testimonials">
- <div class="container">
-     <div class="inner-testimonials top-spacing">
-         <h1 class="title-heading"> Client Testimonials</h1>
-         
-         <div class="horizontal-carrousel">
-             <div class="testimonial-card">
-                 <div class="head-card">
-                     <div class="head-card-img-container">
-                          <img src="assets/pexels-ali-pazani-2772099.jpg"> 
-                     </div>
-                     <div class="head-card-user">
-                         <h3>Andrea Smith</h3>
-                         <h3> Verified Buyer</h3>
-                     </div>
-                 </div>
-                 <div class="card-body">
-                     <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
-                 </div>
-             </div>
-
-             <div class="testimonial-card">
-                <div class="head-card">
-                    <div class="head-card-img-container">
-                         <img src="assets/pexels-ali-pazani-2772099.jpg"> 
-                    </div>
-                    <div class="head-card-user">
-                        <h3>Andrea Smith</h3>
-                        <h3> Verified Buyer</h3>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="head-card">
-                    <div class="head-card-img-container">
-                         <img src="assets/pexels-ali-pazani-2772099.jpg"> 
-                    </div>
-                    <div class="head-card-user">
-                        <h3>Andrea Smith</h3>
-                        <h3> Verified Buyer</h3>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam sed optio accusantium adipisci dolore, iusto minus fugit perspiciatis reiciendis"</p>
-                </div>
-            </div>
-            
-
-             <div class="carrousel-buttons">
-                 <div class="carrousel-controller"></div>
-                 <div class="carrousel-controller"></div>
-                 <div class="carrousel-controller"></div>
-                 <div class="carrousel-controller"></div>
-             </div>
-         </div>
-     </div>
- </div>
-</section>
-
-<section class="contact">
-  <div class="container">
-     <div class="inner-contact top-spacing">
-       <h1 class="title-heading"> Contacto</h1>
-       <div class="grid-contact-info-container">
-          <div class="info">
-             <div class="info-card">
-                    <h2> Get in Touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non enim fuga ad, nam magni fugit. Voluptate odio
-                        itaque minima voluptas iste maxime! Perspiciatis, iste?</p>
-                    <div class="contact-features-container">
-                        <div class="contact-features">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="contact-features">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="contact-features">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
                         </div>
                     </div>
-
-            </div>
-        
-           
-            </div>
-           
-            <div class="contact-form-grid-container">
-                
-                <div class="contact-form">
-                <h2> Say Something</h2>
-                <form>
-                   <div class="input-controls">
-                    <div>
-                        <input type="text" id="first-name" placeholder="First Name *">
-                      </div>
-                      <div>
-                        <input type="text" id="last-name" placeholder="Last Name *">
-                      </div>
-    
-                      <div>
-                        <input type="text" id="email" placeholder="Email*">
-                      </div>
-    
-                      <div>
-                        <input type="text" id="comment" placeholder="Message*">
-                      </div>
-                   </div>
-                   
-                   <div class="btn-container">
-                    <input class="btn" type="submit" id="submit" value="Send">
                 </div>
-                 
-                </form>
+                <div class="copyright">
+                    <p>© Copyright 2020 Mailyspa – All Rights Reserved.</p>
+                </div>
             </div>
-
-                
-            </div>
-          <div class="map">
-          
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1881.9277600445043!2d-70.35214105132081!3d19.375407647530906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8eae28d8fbfb031f%3A0x54ec362bdd44c8cd!2sMayelin%20Nails%20And%20Bar%2C%20Tenares%2034000%2C%20Dominican%20Republic!3m2!1d19.3753191!2d-70.3513042!5e0!3m2!1sen!2sus!4v1604411241608!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-       </div>
-     </div>
-  </div>
-</section>
-
-
-<section class="footer">
-<div class="container">
-    <div class="inner-footer top-spacing">
-        <div class="inner-heading-container">
-            <div> <img src="assets/newMayelinLogo-removebg-preview.png" class="logo"/></div>
-            <div id="heading-footer">
-                <h2>Saturday is a day for the spa</h2>
-                <h2>Relex, indulge, enjoy, and love yourself. too.</h2>
-            </div> 
         </div>
-
-        <div class="inner-info-container top-spacing">
-            <div class="card">
-               <h3>our location</h3>
-               <p>New York, USA – 1060</p>
-               <p> First Avenue, Muswell Hill</p>
-            </div>
-
-            <div class="card">
-                <h3>Opening Hours</h3>
-                 <div>
-                    <p>Monday – Friday</p>
-                    <p>8:00 AM – 05:00 PM</p>
-                 </div>
-
-                 <div>
-                     <p>Saturday</p>
-                     <p> 8:00 AM – 05:00 PM</p>
-                 </div>
-             </div>
-
-             <div class="card">
-                <h3>Quick Contact</h3>
-                <p>Feel Free to call</p>
-                <p id="contact-number">1(809)-447-9942</p>
-                <p>office@mailyspa.com</p>
-             </div>
-
-             <div class="card">
-                 <div class="btn-container">
-                     <button class="btn"> Reservar</button>
-                 </div>
-             </div>
-        </div>
-
-        <div class="links-social-medial-container top-spacing">
-             
-            <nav>
-                 <ul>
-                    <li class="items"> <a href="#"> Home</a></li>
-                    <li class="items"> <a href="#"> Sobre Nosotros</a></li>
-                    <li class="items"> <a href="#"> Servicios</a></li>
-                    <li class="items"> <a href="#"> Productos</a></li>
-                    <li class="items"> <a href="#"> Lashes Studio</a></li>
-                    <li class="items"> <a href="#"> Galleria</a></li>
-                    <li class="items"> <a href="#"> Contacto</a></li>
-                 </ul>
-             </nav> 
-
-             <div class="social-media">
-                  <div> 
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </div>
-
-                  <div> 
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </div>
-
-                  <div> 
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                  </div>
-             </div>
-        </div>
-        <div class="copyright">
-            <p>© Copyright 2020 Mailyspa – All Rights Reserved.</p>
-        </div>
-    </div>
-</div>
-</section>
+    </section>
 
 </body>
+
 </html>
