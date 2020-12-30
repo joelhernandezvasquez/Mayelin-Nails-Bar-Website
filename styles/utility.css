@@ -6,13 +6,13 @@
 }
 
 .logo {
-  width: 85px;
-  height: 85px;
+  width: 160px;
+  height: 70px;
 }
 
 .active-link {
   color: #7c3367;
-  border-bottom: 2px solid #5B254B;
+  border-bottom: 2px solid #7c3367;
 }
 
 .btn {
@@ -22,6 +22,31 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   cursor: pointer;
+}
+
+.reservation-btn {
+  padding: 1.2em 3.2rem;
+  background: #e2668b;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  z-index: 5;
+}
+
+.reservation-btn a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+}
+
+.reservation-btn i {
+  color: white;
+  margin-right: 5px;
+}
+
+.reservation-btn:hover {
+  background: #e885a3;
 }
 
 .overlay {
@@ -76,5 +101,22 @@
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.link-border {
+  width: 0;
+  margin-top: 0.3rem;
+  background: #7c3367;
+  height: 2px;
+}
+
+.grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=utility.css.map */

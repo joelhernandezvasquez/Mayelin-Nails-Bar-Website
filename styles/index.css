@@ -6,13 +6,13 @@
 }
 
 .logo {
-  width: 85px;
-  height: 85px;
+  width: 160px;
+  height: 70px;
 }
 
 .active-link {
   color: #7c3367;
-  border-bottom: 2px solid #5B254B;
+  border-bottom: 2px solid #7c3367;
 }
 
 .btn {
@@ -24,6 +24,31 @@
   cursor: pointer;
 }
 
+.reservation-btn {
+  padding: 1.2em 3.2rem;
+  background: #e2668b;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  z-index: 5;
+}
+
+.reservation-btn a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+}
+
+.reservation-btn i {
+  color: white;
+  margin-right: 5px;
+}
+
+.reservation-btn:hover {
+  background: #e885a3;
+}
+
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -33,7 +58,7 @@
   left: 0;
 }
 
-.btn-container, .showcase .welcome-message .feature-services-container .feature .icon, .services .inner-services .services-title, .services .inner-services .services-features-container .card, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container, .footer .inner-footer .links-social-medial-container .social-media div {
+.btn-container, .showcase .welcome-message .showcase-info .feature-services-container .feature .icon, .showcase .welcome-message .image-profile-container, .services .inner-services .services-title, .services .inner-services .services-features-container .card .card-details, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature .icon, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer, .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer, .products .container .inner-products, .products .container .inner-products .carrousel .arrow, .products .container .inner-products .carrousel .left-arrow-container, .products .container .inner-products .carrousel .card-containers .card-product, .products .container .inner-products .carrousel .right-arrow-container, .products .container .inner-products .carrousel #btn-products-container, .gallery .container .inner-gallery #btn-gallery-container, .footer .inner-footer .links-social-medial-container .social-media div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +72,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.services .inner-services .services-features-container .card .nails, .services .inner-services .services-features-container .card .manicure, .services .inner-services .services-features-container .card .pedicure, .services .inner-services .services-features-container .card .lashes {
+  width: 100%;
+  height: 50%;
 }
 
 .top-spacing {
@@ -78,6 +108,23 @@
   letter-spacing: 1px;
 }
 
+.link-border {
+  width: 0;
+  margin-top: 0.3rem;
+  background: #7c3367;
+  height: 2px;
+}
+
+.grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .showcase {
   width: 100%;
   height: 100vh;
@@ -86,21 +133,22 @@
 
 .showcase .welcome-message {
   width: 100%;
-  margin: 3.5rem 0;
+  height: 730px;
+  border: 1px solid red;
 }
 
-.showcase .welcome-message h1 {
+.showcase .welcome-message .showcase-info h1 {
   font-family: "El Messiri", sans-serif;
   color: #7c3367;
   font-size: 4rem;
   line-height: 1.3;
 }
 
-.showcase .welcome-message .feature-services-container {
+.showcase .welcome-message .showcase-info .feature-services-container {
   margin-top: 2rem;
 }
 
-.showcase .welcome-message .feature-services-container .feature {
+.showcase .welcome-message .showcase-info .feature-services-container .feature {
   width: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +159,7 @@
   margin: 0.8rem 0;
 }
 
-.showcase .welcome-message .feature-services-container .feature .icon {
+.showcase .welcome-message .showcase-info .feature-services-container .feature .icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -119,29 +167,29 @@
   margin-right: 1.2rem;
 }
 
-.showcase .welcome-message .feature-services-container .feature .icon i {
+.showcase .welcome-message .showcase-info .feature-services-container .feature .icon i {
   font-size: 1rem;
   color: #e885a3;
 }
 
-.showcase .welcome-message .feature-services-container .feature h3 {
+.showcase .welcome-message .showcase-info .feature-services-container .feature h3 {
   font-size: 1rem;
   color: #6f5a69;
   font-weight: 400;
 }
 
-.showcase .welcome-message .btn-container-action {
+.showcase .welcome-message .showcase-info .btn-container-action {
   margin-top: 3rem;
 }
 
-.showcase .welcome-message .btn-container-action .btn-reservation {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-reservation {
   padding: 1.2em 3.6rem;
-  background: #e2668b;
+  background: #7c3367;
   -webkit-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
 }
 
-.showcase .welcome-message .btn-container-action .btn-reservation a {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-reservation a {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -149,25 +197,25 @@
   letter-spacing: 2px;
 }
 
-.showcase .welcome-message .btn-container-action .btn-reservation i {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-reservation i {
   color: white;
   margin-right: 5px;
 }
 
-.showcase .welcome-message .btn-container-action .btn-reservation:hover {
-  background: #e885a3;
+.showcase .welcome-message .showcase-info .btn-container-action .btn-reservation:hover {
+  background: #8f4e7c;
 }
 
-.showcase .welcome-message .btn-container-action .btn-servicios {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-servicios {
   padding: 1rem 4rem;
   background: transparent;
-  border: 1px solid #e885a3;
+  border: 1px solid #7c3367;
   margin-left: 1rem;
   -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 
-.showcase .welcome-message .btn-container-action .btn-servicios a {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-servicios a {
   color: #7c3367;
   font-size: 0.72rem;
   letter-spacing: 2px;
@@ -175,33 +223,31 @@
   text-transform: uppercase;
 }
 
-.showcase .welcome-message .btn-container-action .btn-servicios:hover {
-  background: #e885a3;
+.showcase .welcome-message .showcase-info .btn-container-action .btn-servicios:hover {
+  background: #8f4e7c;
 }
 
-.showcase .welcome-message .btn-container-action .btn-servicios:hover a {
+.showcase .welcome-message .showcase-info .btn-container-action .btn-servicios:hover a {
   color: white;
 }
 
-.showcase .image-area {
-  background: #7c3367;
-  width: 500px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.showcase .image-area .image-profile-container {
-  position: absolute;
-  top: 100px;
-  right: 300px;
-  z-index: 3;
-  overflow-x: hidden;
-}
-
-.showcase .image-area .image-profile-container img {
+.showcase .welcome-message .image-profile-container {
+  background: #ffffff;
   width: 700px;
+  height: 700px;
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.showcase .welcome-message .image-profile-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: #7c3367;
 }
 
 .about-us {
@@ -214,7 +260,8 @@
   display: grid;
   -ms-grid-columns: 0.5fr 1fr;
       grid-template-columns: 0.5fr 1fr;
-  margin-top: 6rem;
+  padding: 2rem 0;
+  margin-top: 4rem;
 }
 
 .about-us .inner-about-us .image-profile img {
@@ -223,10 +270,20 @@
 
 .about-us .inner-about-us .about-us-info {
   padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about-us .inner-about-us .about-us-info * {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .about-us .inner-about-us .about-us-info h1 {
@@ -238,7 +295,7 @@
 
 .about-us .inner-about-us .about-us-info p {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   width: 80%;
 }
@@ -247,10 +304,11 @@
   padding: 1rem 3.5rem;
   font-size: 0.9rem;
   font-weight: 700;
-  background: #e885a3;
+  background: #e2668b;
   -webkit-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
   text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 
 .about-us .inner-about-us .about-us-info button a {
@@ -258,7 +316,7 @@
 }
 
 .about-us .inner-about-us .about-us-info button:hover {
-  background: #e2668b;
+  background: #e885a3;
 }
 
 .services .inner-services {
@@ -268,6 +326,8 @@
 .services .inner-services .services-title img {
   width: 120px;
   height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services .inner-services .services-title h3 {
@@ -279,67 +339,93 @@
 }
 
 .services .inner-services .services-features-container {
-  height: 400px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(200px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
+  margin: 4rem 0;
 }
 
 .services .inner-services .services-features-container .card {
-  width: 300px;
-  height: 350px;
+  height: 400px;
   border-radius: 5px;
-  border: 1px solid #7c3367;
+  border: 1px solid #9f1865;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
 
-.services .inner-services .services-features-container .card * {
+.services .inner-services .services-features-container .card .card-details {
+  margin-top: 5px;
+}
+
+.services .inner-services .services-features-container .card .card-details * {
   margin: 5px 0;
 }
 
-.services .inner-services .services-features-container .card .icon-container img {
-  width: 60px;
-  height: 60px;
-}
-
-.services .inner-services .services-features-container .card h2 {
+.services .inner-services .services-features-container .card .card-details h2 {
   color: #7c3367;
 }
 
-.services .inner-services .services-features-container .card p {
+.services .inner-services .services-features-container .card .card-details p {
   color: #8f4e7c;
   text-align: center;
   padding: 0 1rem;
   line-height: 1.6;
 }
 
-.services .inner-services .services-features-container .card a {
+.services .inner-services .services-features-container .card .card-details a {
   color: #7c3367;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
+.services .inner-services .services-features-container .card .nails {
+  background: url("../assets/nails2.jpeg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.services .inner-services .services-features-container .card .manicure {
+  background: url("../assets/manicure2.jpeg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.services .inner-services .services-features-container .card .pedicure {
+  background: url("../assets/pedicure.jpeg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.services .inner-services .services-features-container .card .lashes {
+  background: url("../assets/pestanas.jpeg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
 .services .inner-services .services-features-container .card:hover {
-  border: 1px solid #e885a3;
-  -webkit-box-shadow: 4px 4px 20px -4px rgba(232, 133, 163, 0.61);
-          box-shadow: 4px 4px 20px -4px rgba(232, 133, 163, 0.61);
+  border: 1px solid #9f1865;
+  -webkit-box-shadow: 4px 4px 20px -4px rgba(159, 24, 101, 0.9);
+          box-shadow: 4px 4px 20px -4px rgba(159, 24, 101, 0.9);
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
 
-.services .inner-services #services-btn-container {
-  margin: 5rem auto;
+.services #services-btn-container {
+  margin: 6rem auto;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,26 +438,27 @@
           justify-content: center;
 }
 
-.services .inner-services #services-btn-container button {
+.services #services-btn-container button {
   padding: 1.2rem 3rem;
   background: transparent;
-  border: 1px solid #e885a3;
+  border: 1px solid #7c3367;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-.services .inner-services #services-btn-container button a {
+.services #services-btn-container button a {
   color: #7c3367;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.services .inner-services #services-btn-container button:hover {
-  background: #e2668b;
+.services #services-btn-container button:hover {
+  background: #7c3367;
 }
 
-.services .inner-services #services-btn-container button:hover a {
+.services #services-btn-container button:hover a {
   color: white;
 }
 
@@ -398,6 +485,7 @@
   -ms-flex-line-pack: center;
       align-content: center;
   position: absolute;
+  margin-top: 2rem;
 }
 
 .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info {
@@ -417,7 +505,7 @@
 
 .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 4.5rem;
   letter-spacing: 2px;
 }
 
@@ -425,7 +513,7 @@
   color: white;
   line-height: 1.8;
   width: 75%;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature {
@@ -469,7 +557,7 @@
   color: white;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -656,7 +744,7 @@
 }
 
 .gallery .container .inner-gallery {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .gallery .container .inner-gallery .tab-component .tab-navigation {
@@ -688,12 +776,12 @@
 }
 
 .gallery .container .inner-gallery .tab-component .tab-navigation ul li:hover {
-  color: #e885a3;
+  color: #7c3367;
 }
 
 .gallery .container .inner-gallery .tab-component .tab-navigation ul .active-tab {
-  border-bottom: 2px solid #e885a3;
-  color: #e885a3;
+  border-bottom: 2px solid #7c3367;
+  color: #7c3367;
 }
 
 .gallery .container .inner-gallery .tab-component .tab-body {
@@ -833,12 +921,16 @@
   color: #8b7885;
 }
 
+.team .inner-team .btn-container {
+  margin-top: 6rem;
+}
+
 .team .inner-team .btn-container button {
-  background: #e885a3;
+  background: #7c3367;
 }
 
 .team .inner-team .btn-container button:hover {
-  background: #e2668b;
+  background: #8f4e7c;
 }
 
 .testimonials {
@@ -855,9 +947,9 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (400px)[3];
-      grid-template-columns: repeat(3, 400px);
-  grid-gap: 20px;
+  -ms-grid-columns: (minmax(250px, 350px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-gap: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -867,7 +959,6 @@
 }
 
 .testimonials .inner-testimonials .horizontal-carrousel .testimonial-card {
-  width: 380px;
   background: white;
   border-radius: 10px;
   padding: 3rem 2rem;
@@ -1113,7 +1204,7 @@
 }
 
 .footer {
-  background: #7c3367;
+  background: #fdf2f5;
 }
 
 .footer .inner-footer .inner-heading-container {
@@ -1130,7 +1221,7 @@
 }
 
 .footer .inner-footer .inner-heading-container #heading-footer h2 {
-  color: white;
+  color: #7c3367;
   font-size: 2.2rem;
   line-height: 1.4;
 }
@@ -1140,6 +1231,9 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .inner-footer .inner-info-container .card {
@@ -1153,15 +1247,16 @@
 }
 
 .footer .inner-footer .inner-info-container .card h3 {
-  color: white;
+  color: #7c3367;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .footer .inner-footer .inner-info-container .card p {
-  color: white;
-  font-size: 1rem;
+  color: #8f4e7c;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .footer .inner-footer .inner-info-container div:nth-child(1) p,
@@ -1185,18 +1280,26 @@
 
 .footer .inner-footer .inner-info-container div:nth-child(3) #contact-number {
   font-size: 2rem;
-  color: #e885a3;
+  color: #7c3367;
   font-weight: bold;
   font-family: "El Messiri", sans-serif;
   letter-spacing: 2px;
   margin: 5px 0;
 }
 
-.footer .inner-footer .inner-info-container div:nth-child(4) button {
-  background: #e885a3;
+.footer .inner-footer .inner-info-container div:nth-child(4) .btn-container {
+  margin: 0;
+}
+
+.footer .inner-footer .inner-info-container div:nth-child(4) .btn-container button {
+  background: #7c3367;
   color: white;
   text-transform: uppercase;
-  width: 100%;
+  width: 80%;
+}
+
+.footer .inner-footer .inner-info-container div:nth-child(4) .btn-container button:hover {
+  background: #8f4e7c;
 }
 
 .footer .inner-footer .links-social-medial-container {
@@ -1226,13 +1329,14 @@
 }
 
 .footer .inner-footer .links-social-medial-container nav ul a {
-  color: white;
+  color: #7c3367;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 0.75rem;
 }
 
 .footer .inner-footer .links-social-medial-container nav ul a:hover {
-  color: #e2668b;
+  color: #8f4e7c;
 }
 
 .footer .inner-footer .links-social-medial-container .social-media {
@@ -1267,6 +1371,7 @@
 }
 
 .footer .inner-footer .copyright p {
-  color: white;
+  color: #7c3367;
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.css.map */
