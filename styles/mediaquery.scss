@@ -326,3 +326,48 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.container {
+		border: 1px solid red;
+		//padding: 1rem;
+	}
+
+	.showcase {
+		.tablet-nav {
+			.container {
+				.logo {
+					width: 140px;
+					height: 60px;
+				}
+				.hamburger-menu {
+					width: 45px;
+					height: 45px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.showcase {
+		.tablet-nav {
+			.container {
+				.logo {
+					width: 150px;
+					height: 60px;
+					order: 2;
+				}
+				.hamburger-menu {
+					width: 45px;
+					height: 45px;
+					order: 1;
+				}
+
+				.reservation-btn {
+					display: none;
+				}
+			}
+		}
+	}
+}
