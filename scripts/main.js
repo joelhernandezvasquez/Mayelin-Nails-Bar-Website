@@ -1,6 +1,6 @@
 
 const arrayCards = document.querySelectorAll(".card-product");
-
+const links = document.querySelector(".main-nav");
 
 
 const init = () => {
@@ -13,5 +13,25 @@ const init = () => {
     })
 }
 
+function hoverLinks(e)
+{
+     if(e.target.classList.contains("link"))
+  {
+    const borderLink = e.target.nextElementSibling;
+    animateLinksBorder(borderLink);
+    
+  }
+}
+
+const hoverOutLinks = (e) => {
+  if(e.target.classList.contains("link"))
+  {
+    const borderLink = e.target.nextElementSibling;
+    animateLinksBorderOut(borderLink);
+  }
+}
+
 
 window.addEventListener("load",init);
+links.addEventListener("mouseover",hoverLinks);
+links.addEventListener("mouseout",hoverOutLinks);
