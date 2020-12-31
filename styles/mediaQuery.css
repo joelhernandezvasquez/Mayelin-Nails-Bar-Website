@@ -324,8 +324,9 @@
     font-size: 2.7rem;
   }
   .showcase .welcome-message .grid-2 .image-profile-container {
-    width: 330px;
-    height: 330px;
+    top: 150px;
+    width: 310px;
+    height: 310px;
   }
   .showcase .welcome-message .grid-2 .btn-container-action {
     margin-top: 5rem;
@@ -338,15 +339,10 @@
   }
   .showcase .welcome-message .grid-2 .image-profile-container {
     top: 110px;
-    width: 330px;
-    height: 330px;
   }
 }
 
 @media (max-width: 767px) {
-  .container {
-    border: 1px solid red;
-  }
   .showcase .tablet-nav .container .logo {
     width: 140px;
     height: 60px;
@@ -358,6 +354,9 @@
 }
 
 @media (max-width: 600px) {
+  .showcase {
+    height: 750px;
+  }
   .showcase .tablet-nav .container .logo {
     width: 150px;
     height: 60px;
@@ -374,6 +373,78 @@
   }
   .showcase .tablet-nav .container .reservation-btn {
     display: none;
+  }
+  .showcase .welcome-message {
+    margin: 1.5rem 0;
+    height: auto;
+  }
+  .showcase .welcome-message .grid-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 2.2rem;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info h1 {
+    line-height: 1.6;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info .feature-services-container {
+    display: none;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info h1:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info h1:nth-child(2),
+  .showcase .welcome-message .grid-2 .showcase-info h1:nth-child(3) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .showcase .welcome-message .grid-2 .image-profile-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .showcase .welcome-message .grid-2 .btn-container-action {
+    margin-top: 2rem;
+  }
+  .showcase .welcome-message .grid-2 .btn-container-action .btn-servicios {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .showcase {
+    height: 730px;
+  }
+  .showcase .container {
+    padding: 1rem;
+  }
+  .showcase .welcome-message .grid-2 .showcase-info h1:nth-child(1) {
+    font-size: 2.4rem;
   }
 }
 /*# sourceMappingURL=mediaquery.css.map */
