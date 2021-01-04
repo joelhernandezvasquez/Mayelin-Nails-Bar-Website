@@ -251,24 +251,36 @@
 
 .about-us {
   background: #8f4e7c;
-  height: 700px;
+  height: 850px;
 }
 
-.about-us .inner-about-us {
+.about-us .container h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-us .container .inner-about-us {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.5fr 1fr;
-      grid-template-columns: 0.5fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
   padding: 2rem 0;
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 
-.about-us .inner-about-us .image-profile img {
-  width: 600px;
+.about-us .container .inner-about-us img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-.about-us .inner-about-us .about-us-info {
-  padding: 0 3rem;
+.about-us .container .inner-about-us .about-us-info {
+  justify-self: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,27 +291,19 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.about-us .inner-about-us .about-us-info * {
-  margin: 5px 0;
-}
-
-.about-us .inner-about-us .about-us-info h1 {
+.about-us .container .inner-about-us .about-us-info p {
   color: white;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-family: "El Messiri", sans-serif;
-}
-
-.about-us .inner-about-us .about-us-info p {
-  color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
-  width: 80%;
+  padding-right: 2rem;
 }
 
-.about-us .inner-about-us .about-us-info button {
+.about-us .container .inner-about-us .about-us-info button {
   padding: 1rem 3.5rem;
   font-size: 0.9rem;
   font-weight: 700;
@@ -310,11 +314,11 @@
   margin-top: 1.5rem;
 }
 
-.about-us .inner-about-us .about-us-info button a {
+.about-us .container .inner-about-us .about-us-info button a {
   color: white;
 }
 
-.about-us .inner-about-us .about-us-info button:hover {
+.about-us .container .inner-about-us .about-us-info button:hover {
   background: #e885a3;
 }
 

@@ -32,16 +32,22 @@
 			}
 		}
 	}
-}
 
-.about-us {
+ .about-us {
+	 .container{
+		
 	.inner-about-us {
+
+	
 		.about-us-info {
-			p {
-				width: 100%;
+			p{
+				font-size: 1.1rem;
+				margin-bottom: 10px;
 			}
 		}
 	}
+	}
+} 
 }
 
 .services {
@@ -72,20 +78,7 @@
 }
 
 @media (max-width: 1480px) {
-	.about-us {
-		.container {
-			padding: 1rem;
-			.inner-about-us {
-				.about-us-info {
-					padding: 0 2rem;
-
-					h1 {
-						margin-top: 0px;
-					}
-				}
-			}
-		}
-	}
+	
 
 	.services {
 		.container {
@@ -130,14 +123,18 @@
 	}
 
 	.about-us {
-		.inner-about-us {
-			.about-us-info {
-				p {
-					font-size: 1rem;
-				}
+		height:750px;
+		.container{
+		
+		
+		.inner-about-us{
+			
+			.about-us-info{
+				p{font-size: 0.98rem;}
 			}
 		}
 	}
+}
 
 	.services {
 		.container {
@@ -267,6 +264,8 @@
 	}
 }
 
+
+
 @media (max-width: 1025px) {
 	.showcase {
 		.welcome-message {
@@ -285,6 +284,65 @@
 		}
 	}
 }
+
+@media(max-width:1001px)
+{
+	.about-us {
+		height:auto;
+		.container{
+		
+		
+		.inner-about-us{
+			grid-template-columns: 1fr;
+			 
+			img
+			{
+				justify-self: center;
+				width:700px;
+			}
+			.about-us-info{
+				justify-self: center;
+			  
+
+				p{
+					padding-right: 0;
+					font-size: 1.1rem;
+					
+
+				}
+			}
+		}
+	}
+}	
+}
+
+@media(max-width:950px)
+{
+	.about-us{
+     height: auto;
+		.inner-about-us{
+
+		
+
+			.image-profile{
+				img{
+					
+				}
+			}
+			
+			.about-us-info{
+				h1{
+					font-size: 2.2rem;
+				}
+
+
+			
+		}
+	}
+}
+}
+
+
 
 @media (max-width: 880px) {
 	.showcase {
@@ -307,6 +365,10 @@
 			}
 		}
 	}
+	
+
+
+	
 }
 
 @media (max-width: 769px) {
