@@ -138,6 +138,9 @@
     width: 580px;
     height: 580px;
   }
+  .about-us {
+    height: 750px;
+  }
   .about-us .container .inner-about-us .about-us-info p {
     font-size: 1.1rem;
     margin-bottom: 10px;
@@ -184,8 +187,9 @@
     width: 520px;
     height: 520px;
   }
-  .about-us {
-    height: 750px;
+  .about-us .container .inner-about-us {
+    -ms-grid-columns: 1fr 1.1fr;
+        grid-template-columns: 1fr 1.1fr;
   }
   .about-us .container .inner-about-us .about-us-info p {
     font-size: 0.98rem;

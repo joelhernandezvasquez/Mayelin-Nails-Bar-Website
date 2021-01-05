@@ -251,7 +251,7 @@
 
 .about-us {
   background: #8f4e7c;
-  height: 850px;
+  height: 800px;
 }
 
 .about-us .container h1 {
@@ -264,11 +264,11 @@
 .about-us .container .inner-about-us {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 0.8fr 1.2fr;
+      grid-template-columns: 0.8fr 1.2fr;
   grid-gap: 25px;
   padding: 2rem 0;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .about-us .container .inner-about-us img {

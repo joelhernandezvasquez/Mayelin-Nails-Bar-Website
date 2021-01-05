@@ -120,7 +120,7 @@
 
 .about-us {
 	background: $primary-links-color;
-	height: 850px;
+	height: 800px;
 	.container{
          
 	h1{
@@ -132,14 +132,13 @@
 
 	.inner-about-us {
 		display: grid;
-		grid-template-columns:repeat(2,1fr);
+		grid-template-columns:0.8fr 1.2fr;
 		grid-gap:25px;
 		padding:2rem 0;
-		margin: 4rem 0;
+		margin: 2rem 0;
 		
 			img {
 				width: 100%;
-				
 			   object-fit: cover;
 			   object-position: center;
 			   
@@ -147,7 +146,6 @@
 		
 		.about-us-info {
 		justify-self: flex-start;
-			
 		 display:flex;
 		 flex-direction: column;
 		 align-items: flex-start;

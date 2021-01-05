@@ -34,7 +34,8 @@
 	}
 
  .about-us {
-	 .container{
+	 height: 750px;
+	.container{
 		
 	.inner-about-us {
 
@@ -123,12 +124,12 @@
 	}
 
 	.about-us {
-		height:750px;
+		
 		.container{
 		
 		
 		.inner-about-us{
-			
+			grid-template-columns: 1fr 1.1fr;
 			.about-us-info{
 				p{font-size: 0.98rem;}
 			}
