@@ -54,7 +54,12 @@
 .services {
 	.container {
 		.services-features-container {
-			grid-gap: 20px;
+			grid-gap: 10px;
+			justify-content: space-around;
+
+			.card{
+				margin-right: 10px;
+			}
 		}
 	}
 }
@@ -78,17 +83,6 @@
 	}
 }
 
-@media (max-width: 1480px) {
-	
-
-	.services {
-		.container {
-			.services-features-container {
-				grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
-			}
-		}
-	}
-}
 
 @media (max-width: 1281px) {
 	.container {
@@ -129,7 +123,7 @@
 		
 		
 		.inner-about-us{
-			grid-template-columns: 1fr 1.1fr;
+			grid-template-columns: repeat(2,1fr);
 			.about-us-info{
 				p{font-size: 0.98rem;}
 			}
@@ -140,7 +134,14 @@
 	.services {
 		.container {
 			.services-features-container {
-				grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+			 grid-template-columns: repeat(2,320px);
+			 justify-content: space-around;
+
+			 .card{
+				 margin-right: 0;
+				 margin-bottom: 2rem;
+			 }
+			 
 			}
 		}
 	}
@@ -295,11 +296,13 @@
 		
 		.inner-about-us{
 			grid-template-columns: 1fr;
+			padding:2rem;
+
 			 
 			img
 			{
 				justify-self: center;
-				width:700px;
+				
 			}
 			.about-us-info{
 				justify-self: center;
@@ -307,7 +310,7 @@
 
 				p{
 					padding-right: 0;
-					font-size: 1.1rem;
+					font-size: 1rem;
 					
 
 				}
@@ -317,31 +320,7 @@
 }	
 }
 
-@media(max-width:950px)
-{
-	.about-us{
-     height: auto;
-		.inner-about-us{
 
-		
-
-			.image-profile{
-				img{
-					
-				}
-			}
-			
-			.about-us-info{
-				h1{
-					font-size: 2.2rem;
-				}
-
-
-			
-		}
-	}
-}
-}
 
 
 
@@ -366,10 +345,7 @@
 			}
 		}
 	}
-	
-
-
-	
+		
 }
 
 @media (max-width: 769px) {
@@ -388,6 +364,18 @@
 			}
 		}
 	}
+
+	.services {
+		.container {
+			.services-features-container {
+			 grid-template-columns: repeat(2,280px);
+			}
+			#services-btn-container {
+				// border:1px solid yellow;
+				margin: 6rem auto 6rem auto;
+		}
+	}
+}
 }
 
 @media (max-width: 767px) {
@@ -493,8 +481,51 @@
 			}
 		}
 	}
+
+	.services {
+		.container {
+
+			
+			.services-features-container {
+			 grid-template-columns: 1fr;
+			 
+
+			 .card{
+				 width:320px;
+				justify-self: center;
+
+			 }
+			}
+			#services-btn-container {
+				width:100%;
+		}
+	}
+}
 }
 
+
+@media(max-width:500px)
+{
+	.about-us{
+		.container{
+			.inner-about-us{
+              padding:1rem 0;
+			}
+		}
+	}
+
+	.services {
+		.container {
+			.services-features-container {
+		
+			 .card{
+				 width:300px;
+
+			 }
+			}
+	}
+}
+}
 
 @media (max-width: 376px) {
 	.showcase{

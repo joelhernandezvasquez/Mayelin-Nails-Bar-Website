@@ -183,6 +183,7 @@
 .services {
 	.inner-services {
 		margin: auto;
+		//border:1px solid red;
 		.services-title {
 			@extend %flex-properties;
 			img {
@@ -202,8 +203,8 @@
 		.services-features-container {
 			//border:1px solid green;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-			grid-gap: 30px;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+			grid-gap: 40px;
 			align-items: center;
 			justify-content: center;
 			margin: 4rem 0;
@@ -214,6 +215,7 @@
 				border-radius: 5px;
 				border: 1px solid #9f1865;
 				transition: all 0.2s ease-out;
+				margin-right:25px;
 				cursor: pointer;
 
 				.card-details {
@@ -281,7 +283,7 @@
 	}
 	#services-btn-container {
 		// border:1px solid yellow;
-		margin: 6rem auto;
+		margin: 8rem auto 6rem auto;
 		width: 50%;
 		display: flex;
 		align-items: center;
