@@ -285,6 +285,10 @@
 			}
 		}
 	}
+
+	.eye-lashes-studio{
+		height:900px;
+	}
 }
 
 @media(max-width:1001px)
@@ -344,6 +348,82 @@
 				}
 			}
 		}
+	}
+
+	.eye-lashes-studio{
+
+		height:870px;
+		
+		.inner-eye-lashes-studio{
+        
+		.container-lashes{
+			grid-template-columns: 1fr;
+			margin-top:10px;
+			position:relative;
+			//border:1px solid red;
+			height:auto;
+
+			.lashes-info{
+              
+				* {
+					margin:0;
+				}
+
+				p {
+				
+					line-height: 1.8;
+					width: 90%;
+					font-size: 1.2rem;
+				}
+
+				.feature-services-container{
+					
+					margin-top:2rem;
+
+					.feature{
+						margin:1.2rem 0;
+					}
+				}
+				#reservacion-btn-container{
+					margin-top: 7rem;
+					
+					button{
+					
+						padding: 1rem 5rem;
+						//transform:translateX(20px);
+					}
+					
+				}
+			}
+
+			.video-container{
+				position:absolute;
+				transform: translate(370px,80px);
+				
+
+				#video-outter-layer {
+					width: 180px;
+					height: 180px;
+					
+
+					#video-inner-layer {
+						width: 130px;
+						height: 130px;
+						#video-base-layer {
+							width: 100px;
+							height: 100px;
+							
+
+							i {
+								color: $active-link-color;
+								font-size: 2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	}
 		
 }
@@ -501,6 +581,8 @@
 		}
 	}
 }
+
+
 }
 
 

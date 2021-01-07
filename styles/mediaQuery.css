@@ -50,7 +50,7 @@
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -317,6 +317,9 @@
     width: 400px;
     height: 400px;
   }
+  .eye-lashes-studio {
+    height: 900px;
+  }
 }
 
 @media (max-width: 1001px) {
@@ -356,6 +359,57 @@
   }
   .showcase .welcome-message .grid-2 .btn-container-action {
     margin-top: 5rem;
+  }
+  .eye-lashes-studio {
+    height: 870px;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 10px;
+    position: relative;
+    height: auto;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info * {
+    margin: 0;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info p {
+    line-height: 1.8;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container {
+    margin-top: 2rem;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info .feature-services-container .feature {
+    margin: 1.2rem 0;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info #reservacion-btn-container {
+    margin-top: 7rem;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .lashes-info #reservacion-btn-container button {
+    padding: 1rem 5rem;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container {
+    position: absolute;
+    -webkit-transform: translate(370px, 80px);
+            transform: translate(370px, 80px);
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer {
+    width: 180px;
+    height: 180px;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer {
+    width: 130px;
+    height: 130px;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer {
+    width: 100px;
+    height: 100px;
+  }
+  .eye-lashes-studio .inner-eye-lashes-studio .container-lashes .video-container #video-outter-layer #video-inner-layer #video-base-layer i {
+    color: #e885a3;
+    font-size: 2rem;
   }
 }
 
